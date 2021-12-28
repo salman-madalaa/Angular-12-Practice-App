@@ -1,0 +1,75 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> For Loop in Angular  </b></h1>
+    </div>
+
+    <li> Make Array </li>
+    <li> Apply for Loop on it </li>
+    <li> Make Array of object </li>
+    <li> Apply For loop on Object's Array </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=xjq6Wwgkka8&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=19">Vedeo
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Loop in Angular  </h1> <br>
+    <h3><u>Note : </u> Angular for loop and java script for both are the different . When ever we have to make any loop in side <b>.html</b> file at that time we <b>use angular for loop </b>, but when ever we have to make any loop in side <b>.ts</b> file that time we <b>use java script for loop</b></h3>
+    <br>    <hr>
+    <h2> <u> Make Array : </u> </h2>
+    <h3><u>Syntax:</u> users = ['anil', 'salman', 'prasad', 'vijay', 'visesh'] in .ts file </h3>
+    <br>    <hr>
+    <h2> <u> Apply for Loop on it : </u> </h2>
+    <h3><u>Syntax:</u> *ngFor = "let user of users" </h3>
+    <br>
+
+    <h4>Displaying the users : </h4>
+    <li *ngFor="let user of users">
+     Name is : {{user}}
+    </li>
+
+    <br>    <hr>
+    <h2> <u> Make Array of object : </u> </h2>
+    <h3><u>Syntax:</u> userDetails = [ doubleflowerbrackets, doubleflowerbrackets, doubleflowerbrackets] in .ts file </h3>
+    Inside the flower brackets we have to define = name:'salman',address:'hyderbad',email:'madalasalman@gmai.com' ..... like this
+
+    <br>  <hr>
+
+    <h2><u>Apply For loop on userDetails Object Array :</u></h2>
+    <h3><u>Syntax:</u> *ngFor = "let userDetail of userDetails"  in tr tag which is inside the tbody  </h3>
+
+    <h4>Displaying the usersDetails : </h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Address</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let userDetail of userDetails">
+            <td>{{userDetail.name}}</td>
+            <td>{{userDetail.email}}</td>
+            <td>{{userDetail.address}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <br><br> <hr>
+
+    <h2><u>Interview Questations : </u></h2>
+    <h3>1) can we use angular for loop inside .ts file ? <br> Ans) No</h3>
+    <h3>2) is Angular for loop and java script for loop same ? <br> Ans) No , but they are resolving the same purpose</h3>
+    <h3>3) can we use  for loop inside for loop  ? <br> Ans) Yes</h3>
+
+
+  </div>
+</jqxSplitter>

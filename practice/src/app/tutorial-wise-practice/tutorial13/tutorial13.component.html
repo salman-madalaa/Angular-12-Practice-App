@@ -1,0 +1,45 @@
+<style>
+  .internal{
+    font-size:20px;
+    color:rgb(101, 22, 228);
+  }
+</style>
+
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> How To start with Style </b></h1>
+    </div>
+
+    <li>Component Style</li>
+    <li>Global Style</li>
+    <li>Internal Style</li>
+    <li>Check Style With Multiple Components</li>
+    <li>Interview Questations</li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h3>
+      <p> <u> In Angular there are Four Types of Styles are present </u> : <br>
+        1)Inline Style    : (With In the Tag Ex:  style= "font-size:20px" )            =  <span style="color:red;font-size:20px"> Inline Style </span>   <br>
+        2)Internal Style  : (With In the component ".html" file  Ex:  style  /style )  =  <span class= "internal"> This is Internal Style Example</span> <br>
+        3)Component Style : (With In the component ".css" file)                        = <span class="component"> This is Component Style Example</span> <br>
+        4)Global Style    : (With In the "style.css" file This is Applied All over the App ) = <span class="global"> This is Global Style Example</span> <br>
+        <b>Note :</b> If we apply same styles to multiple components at that time we use Global Style
+      </p>
+    </h3>
+
+    <hr>
+
+    <h1>
+      <b>Note:</b>
+      If we give more then one Style the Priority Wise <br>
+      first priority given to Inline Styles  --> Internal Styles --> component Styles --> At last go to Global Styles
+    </h1>
+
+  </div>
+</jqxSplitter>

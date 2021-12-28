@@ -1,0 +1,19 @@
+ <div class="example-container" >
+  <!-- -------------header------------- -->
+  <app-header (sidenav)="snav.toggle()"></app-header>
+
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #snav mode="over">
+      <mat-nav-list>
+        <app-sidenav></app-sidenav>  <!-- -------------sidenav------------- -->
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!-- -------------footer------------- -->
+  <app-footer style="margin-bottom: 45px !important;"></app-footer>
+</div>

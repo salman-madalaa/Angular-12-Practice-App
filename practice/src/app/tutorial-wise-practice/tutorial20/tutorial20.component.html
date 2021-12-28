@@ -1,0 +1,60 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Style Binding </b></h1>
+    </div>
+
+    <li> What is Style Binding </li>
+    <li> Apply Style Binding </li>
+    <li> Update style on button click </li>
+    <li> Apply 2 style binding </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=8FwRLYbr5YM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=21">Vedeo
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Style Binding </h1> <br>
+
+    <h3><b>1)What is Style Binding ?</b> <br>
+      A) Binding the Dynamic date to Style properties like color,background-color,font-size.....etc
+    </h3>
+    <hr>
+
+    <h3><u><b>Apply Style Binding :</b></u></h3>
+    <h3><u>Syntax : </u> [style.color]="color" <br> Here color is defines in ts file that will bind to the color
+      property of styles <br>
+      Example 1: <span [style.color]="color"> Style Binding</span> <br>
+      Example 2: <input type="text" placeholder="Enter Color" value="blue" #box1 [style.background-color]="box1.value">
+      <span [style.color]="box1.value.toLowerCase()"> Style Binding</span><br>
+      In the above Example, default color is blue if you enter the color name inside the text box that color is apply to
+      the text and the background color of input box.
+    </h3>
+    <hr>
+    <h3><u> <b> Update style on button click </b> </u> :</h3>
+    <h1 [style.color]="color"> Style Binding</h1> <br>
+    <button (click)="updateColor()" class="btn btn-primary">updateColor</button>
+    <hr>
+    <h3><u> <b> Apply 2 style binding </b> </u> :</h3>
+    <h3><u>Syntax  </u> : [style.color]="color" , [style.background-color]="bgColor"  , here color = green , bgColor = yellow </h3>
+    <h1 [style.color]="color1" [style.background-color]="bgColor"> Style Binding</h1> <br>
+
+    <hr>
+
+    <h2><u>Interview Questations : </u></h2>
+    <h3>1) How will you apply style binding ? <br> Ans) [style.color]="color" </h3>
+    <h3>2) Can we use two Style binding on same tag ? <br> Ans) Yes    </h3>
+    <h3>3) Can we use same Style binding property on two html tags ? <br> Ans) Yes <br>
+     <u>Example </u> :  Below Two are same Style Binding Property <br>
+      <span [style.color]="color">One</span> <br>
+      <span [style.color]="color">Two</span>
+    </h3>
+    
+  </div>
+</jqxSplitter>

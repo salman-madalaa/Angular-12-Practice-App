@@ -1,0 +1,54 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Switch Case </b></h1>
+    </div>
+
+    <li>Why use Switch Case</li>
+    <li>Make Switch case</li>
+    <li>Apply Default Case</li>
+    <li>Interview Questations</li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=1VitBcLRP_M&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=18">Vedeo
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Switch Case </h1> <br>
+
+    <h1>Why use Switch Case ?</h1>
+    <h1>When we have more conditions like 5 or above at that time else if conditions is not better choice so that at
+      that time we will use switch case </h1>
+
+    <h2>Make Simple Switch case With Example:</h2>
+    <h3>Enter Any of these colors Inside the text box : Red, Orange, Yellow, Green, Blue, Indigo and Violet</h3>
+    <input type="text" [(ngModel)]="color" class="form-control" style="width:250px" placeholder="Enter color">
+    <br>
+    <div [ngSwitch]="color.toLowerCase()">
+      <h1 *ngSwitchCase="'red'" style="color:red">Red Color</h1>
+      <h1 *ngSwitchCase="'green'" style="color:green">Green Color</h1>
+      <h1 *ngSwitchCase="'blue'" style="color:blue">Blue Color</h1>
+      <h1 *ngSwitchCase="'orange'" style="color:orange">Orange Color</h1>
+      <h1 *ngSwitchCase="'yellow'" style="color:yellow">Yellow Color</h1>
+      <h1 *ngSwitchCase="'indigo'" style="color:indigo">Indigo Color</h1>
+      <h1 *ngSwitchCase="'violet'" style="color:violet">Violet Color</h1>
+
+      <br>
+      <h1>Apply Default Case Inside the Switch case:</h1>
+      <h3><b>Note :</b> If any unknown color enter the input box at that time we display Unknown color text on the screen</h3>
+      <h1 *ngSwitchDefault >Unknown Color</h1>
+    </div>
+
+    <hr>
+
+    <h1>Interview Questations:</h1>
+    1) Where we can use switch case and else if ?
+    a) when there are more number of conditions (like more then 10) at that time switch case better option rather than else if, and if we display default value when no condition satisfy at that time switch case is better option
+
+  </div>
+</jqxSplitter>

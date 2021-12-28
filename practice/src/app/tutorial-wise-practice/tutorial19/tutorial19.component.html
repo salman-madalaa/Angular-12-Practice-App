@@ -1,0 +1,108 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Nested Loop in Angular </b></h1>
+    </div>
+
+    <li> Make Array </li>
+    <li> Apply for Loop on it </li>
+    <li> Make Nested Array </li>
+    <li> Apply For loop on Nested Attar </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=xjq6Wwgkka8&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=19">Vedeo
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Nested Loop </h1> <br>
+
+    <h2> <u> Make Array : </u> </h2>
+    <h3><u>Syntax:</u> users = [doubleflowerbrackets, doubleflowerbrackets] in .ts file <br>
+      Inside the flower brackets we have to define = name:'salman',address:'hyderbad',email:'madalasalman@gmai.com'
+      ..... like this
+    </h3>
+    <br>
+    <hr>
+    <h2> <u> Apply for Loop on it : </u> </h2>
+    <h3><u>Syntax:</u> *ngFor = "let user of users" </h3>
+    <br>
+
+    <h4>Displaying the users : </h4>
+    <li *ngFor="let user of users">
+      Details : {{user.name}} -- {{user.email}} -- {{user.address}}
+    </li>
+
+    <br>
+    <hr>
+    <h2> <u> Make Nested Array : </u> </h2>
+    <h3><u>Syntax:</u> userDetails = [doubleflowerbrackets, doubleflowerbrackets] in .ts file <br>
+      Inside the flower brackets we have to define =
+      name:'salman',address:'hyderbad',email:'madalasalman@gmai.com',account['fb','inst',twitter]...... like this </h3>
+
+    <br>
+    <hr>
+
+    <h2><u>Apply For loop on userDetails Object Array :</u></h2>
+    <h3><u>Syntax:</u> *ngFor = "let userDetail of userDetails" in tr tag which is inside the tbody </h3>
+
+    <h4>Displaying the usersDetails : </h4>
+
+    <u>Table View : </u>
+    <table class="table">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Address</td>
+          <td>SocialAccounts</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let userDetail of nestedUserDetails">
+          <td>{{userDetail.name}}</td>
+          <td>{{userDetail.email}}</td>
+          <td>{{userDetail.address}}</td>
+          <td *ngFor="let socialAccount of userDetail.socialAccount">
+            <ul style=" list-style-type:circle ;">
+              {{socialAccount}}
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h3><u>List View : </u></h3>
+
+    <ul *ngFor="let userDetail of nestedUserDetails;let i = index">  <!--- index alwals starts with 0 -->
+      <li>{{i+1}}. {{userDetail.name}}</li>
+      <li>{{userDetail.email}}</li>
+      <li>{{userDetail.address}}</li>
+      SocialAccounts : <ul *ngFor="let socialAccount of userDetail.socialAccount">
+        <li>{{socialAccount}}</li>
+      </ul>
+    </ul>
+    <br><br>
+    <hr>
+
+    <h2><u>Interview Questations : </u></h2>
+    <h3>1) How you can created a nested loop ? <br> Ans) loop inside the loop is called nesed loop  you can see the above example to understand the nested loop</h3>
+    <h3>2) What is nested Array ? <br> Ans) Array inside an Array is called nested array , in above example we can create  nestedUserDetails array in .ts file
+    </h3>
+    <h3>3) What is the multi dimensional array,how can we make it ? <br> Ans) An array element can reference another array for its value. Such arrays are called as multidimensional arrays. The simplest form of a multi-dimensional array is a two-dimensional array. <br>
+    Ex: var multi:number[ ][ ] = [[1,2,3],[23,24,25]]</h3>
+
+    <h3>Display the Multi Dimension values using the above example :</h3>
+
+    <li *ngFor="let arr1 of multi">
+      <ol *ngFor="let arr2 of arr1">{{arr2}}</ol>
+    </li>
+
+  </div>
+</jqxSplitter>

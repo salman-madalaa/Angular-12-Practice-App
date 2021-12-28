@@ -1,0 +1,50 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Property Binding </b></h1>
+    </div>
+
+    <li>What is Property Binding</li>
+    <li>Diff. between property binding and Interpolation </li>
+    <li>Understand With Example</li>
+    <li>Interview Questations</li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h2> What is Property Binding ? </h2>
+    <h3>Ans) This is the Feature of Angular And <b>"This is Used to update or change the Properties of an input
+        element." Ex: [value] </b></h3>
+    <hr>
+    <h2> What is Property ? </h2>
+    <h3>Ans) Property is nothing but the attributes of a element Ex : if we take input tag it has several properties
+      like placeholder,value,name,disabled,...etc</h3>
+    <hr>
+    <h2> What is Interpolation ? </h2>
+    <h3>Ans) Interpolation is nothing but binding the data using <b>Two flower brackets</b> </h3>
+    <hr>
+    <h2>Diff. between property binding and Interpolation ? </h2>
+    <h3>Ans)Both are used for display the values on html page <br>
+      The Main Difference is interpolation does not capture the boolean values ,property binding capture the boolean
+      valus</h3>
+
+    <hr>
+
+    <h2>Understand With Example </h2>
+    Ex: Interpolation : <input type="text" placeholder="Enter username" name="username" value="{{name}}"
+      disabled={{disable}} readonly="{{disable}}">
+    property binding : <input type="text" placeholder="Enter username" name="username" [value]="name"
+      [disabled]="disable" [readonly]="disable">
+
+    <h2> If you observe the above two inputs code disabled and readonly properties are not capture the boolean values
+      using interpolation . <br> property binding capture the boolean values </h2>
+
+      <hr>
+      <h2>Interview Questations :</h2>
+      <h2>Which method is better option for capturing the values ?</h2>
+      <h2>Ans)<strong> Property binding </strong> is the better option for capturing the values</h2>
+  </div>
+</jqxSplitter>

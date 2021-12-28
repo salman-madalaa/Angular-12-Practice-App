@@ -1,0 +1,49 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Multiple conditions or Elseif</b></h1>
+    </div>
+
+    <li>Apply Basic if condition</li>
+    <li>How to use else-if conditions</li>
+    <li>Interview Questations</li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Multiple conditions or Elseif</h1> <br>
+    <h2>Apply Basic if condition :</h2>
+    <ng-template [ngIf]="color1 == 'red'">
+      <h2 style="color:red">Red Color</h2>
+    </ng-template>
+
+    <hr>
+
+    <h2>How to use else-if conditions ?</h2>
+    <h3><b>Note :</b> In angular there is no elseif property so we can repead the ngIf condition more then two times so that we can achieve else if condition </h3>
+
+    <h2>Ex : Enter the Input box red,green,blue any of these colors based on the given color name we can get the text</h2>
+     <input type="text"  [(ngModel)]="color2" placeholder="enter color">
+
+    <ng-template [ngIf]="color2.toLowerCase() == 'red'">
+      <h2 style="color:red">Red Color</h2>
+    </ng-template>
+    <ng-template [ngIf]="color2.toLowerCase() == 'green'">
+      <h2 style="color:green">Green Color</h2>
+    </ng-template>
+    <ng-template [ngIf]="color2.toLowerCase() == 'blue'">
+      <h2 style="color:blue">Blue Color</h2>
+    </ng-template>
+
+    <hr>
+
+    <h2>Interview Questations :</h2>
+     1) Is there there any other way to execute multiple conditions ? <br>
+     A) Yes, we can use Switch case also.
+
+
+  </div>
+</jqxSplitter>

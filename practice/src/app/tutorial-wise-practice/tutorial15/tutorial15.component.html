@@ -1,0 +1,64 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> If-Else</b></h1>
+    </div>
+
+    <li>Define Property  for if condition</li>
+    <li>Apply Basic if condition</li>
+    <li>How to use if else condition</li>
+    <li>Interview Questations</li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1> Define Property  for if condition </h1>
+    <h1 *ngIf="show">
+      code should be visible
+    </h1>
+
+    <hr>
+
+    <h3>How to use if else condition :  ex: *ngIf = "(trueCondition) else (elseBlock) ".  here elseBlock is he id of the falseBlockTag</h3>
+
+    <h1 *ngIf="!show else elseBlock">
+      True Condition
+    </h1>
+
+    <ng-template #elseBlock>
+      <h1>Else condition</h1>
+    </ng-template>
+
+    <hr>
+
+    <h1>Another way using if else giving two templates</h1>
+
+    <h3>How to use if else condition :  ex: *ngIf = "(trueCondition); then (TrueBlockId) else (elseBlockId) ".  here elseBlock is he id of the falseBlockTag</h3>
+
+    <h1 *ngIf="show; then trueBlock else elseBlock"> </h1>
+
+    <ng-template #trueBlock>
+      <h1>True condition</h1>
+    </ng-template>
+
+    <ng-template #elseBlock>
+      <h1>Else condition</h1>
+    </ng-template>
+
+
+    <hr>
+
+    <h2>How you can show/hide the text based on the click a button ?</h2>
+    <button (click)="Show()"  mat-raised-button  color="primary">Show</button>
+    <button (click)="Hide()"  mat-raised-button color="warn">Hide</button>
+    <h1 *ngIf="show1">
+      show condition working
+    </h1>
+    <h1 *ngIf="!show1">
+      hide condition working
+    </h1>
+  </div>
+</jqxSplitter>

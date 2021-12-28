@@ -1,0 +1,16 @@
+.title
+{
+  text-align: center;
+}
+
+li{
+  font-size:15px;
+  padding-top:5px;
+}
+
+
+.component
+{
+  font-size: 20px;
+  color: rgb(231, 23, 162);
+}

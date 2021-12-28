@@ -1,0 +1,27 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Make Counter </b></h1>
+    </div>
+
+    <li>Make Buttons For Counter</li>
+    <li>Make Function for Counter</li>
+    <li>Call Function on buttons</li>
+    <li>Interview Questations</li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1>Conter With Angular</h1>
+
+    <button (click)="conterFunction('add')" >++</button>
+
+    Conter : {{count}}
+
+    <button (click)="conterFunction('minus')">--</button>
+
+  </div>
+</jqxSplitter>

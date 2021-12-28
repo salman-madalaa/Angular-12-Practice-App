@@ -1,0 +1,10 @@
+.mat-toolbar
+{
+  position: absolute;
+  width: 100%;
+  line-height: 20px;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  height:45px;
+}

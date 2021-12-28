@@ -1,0 +1,73 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Get TextBox Value And Print </b></h1>
+    </div>
+
+    <li>Make Input Box</li>
+    <li>Get Value on Keyup(change)</li>
+    <li>Display value on screen</li>
+    <li>Get The value With Button click</li>
+    <li>Interview Questations</li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <div>
+      <h1>Make Input Box:</h1>
+      <input type="text" placeholder="Enter Text" name="username" id="usernameBox">
+    </div>
+
+    <br>
+
+    <div>
+      <h2>Get Value on Keyup(change):</h2>
+      <!-- --------Here we can get the value directly with out using function calling----- -->
+      <input type="text" #box (keyup)="box.value" placeholder="Enter Text" name="username">
+      {{box.value}}
+      <br>
+      <!-- --------Here we use get the value from Function calling----- -->
+      <input type="text" #box1 (keyup)="getValue(box1.value)" placeholder="Enter Text" name="username">
+      {{box1Value}}
+
+    </div>
+
+    <div>
+      <h3>Get The value With Button click:</h3>
+      <!-- --------Here we can get the value by clicking on the button----- -->
+      <input type="text" #box2 placeholder="Enter Text" name="username"> <button
+        (click)="getValue2(box2.value)">click</button>
+      {{box2Value}}
+    </div>
+
+
+
+    <br>
+    <br>
+
+    <div>
+      <h1> <strong>Note:</strong> There are Differetn types of events like : </h1>
+      <h3>drag, drop, dragover, blur, focus, scroll, submit, click, dblclick, cut, copy, paste, keyup, keypress, keydown, mouseup, mousedown, mouseenter</h3>
+    </div>
+
+    <hr><br>
+
+    <div>
+      <h2>Interview Questations:</h2>
+      <h3> Can we get the place hoder value and name valus of a input box ?</h3>
+      <h3> Yes, we can get the place hoder value and name values</h3>
+      <h2>
+        we can get the placeholder value also by replace the "box.value" to "box.placeholder" and "box.name" inside the function <br>
+        example :  <input type="text" #box3 placeholder="Enter Text" name="username"> <button
+        (click)="getValue3(box3.placeholder)">click</button>
+      {{box3Value}}
+      </h2>
+
+    </div>
+
+
+  </div>
+</jqxSplitter>
