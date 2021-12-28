@@ -12,6 +12,11 @@ import { Tutorial17Component } from './tutorial-wise-practice/tutorial17/tutoria
 import { Tutorial18Component } from './tutorial-wise-practice/tutorial18/tutorial18.component';
 import { Tutorial19Component } from './tutorial-wise-practice/tutorial19/tutorial19.component';
 import { Tutorial20Component } from './tutorial-wise-practice/tutorial20/tutorial20.component';
+import { Tutorial21Component } from './tutorial-wise-practice/tutorial21/tutorial21.component';
+import { Tutorial22Component } from './tutorial-wise-practice/tutorial22/tutorial22.component';
+import { Tutorial23Component } from './tutorial-wise-practice/tutorial23/tutorial23.component';
+import { Tutorial24Component } from './tutorial-wise-practice/tutorial24/tutorial24.component';
+import { Tutorial25Component } from './tutorial-wise-practice/tutorial25/tutorial25.component';
 
 const routes: Routes = [
   {path: 'home',component: HomeComponent},
@@ -25,6 +30,11 @@ const routes: Routes = [
   {path: 'tutorial/18', component:Tutorial18Component},
   {path: 'tutorial/19', component:Tutorial19Component},
   {path: 'tutorial/20', component:Tutorial20Component},
+  {path: 'tutorial/21', component:Tutorial21Component},
+  {path: 'tutorial/22', component:Tutorial22Component},
+  {path: 'tutorial/23', component:Tutorial23Component},
+  {path: 'tutorial/24', component:Tutorial24Component},
+  {path: 'tutorial/25', component:Tutorial25Component},
 
   {path: '',redirectTo: 'home',pathMatch: 'full'},
   {path: '**', component:PageNotFoundComponent},

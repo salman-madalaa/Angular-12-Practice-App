@@ -20,6 +20,7 @@ import { Tutorial21Component } from './tutorial21/tutorial21.component';
 import { Tutorial22Component } from './tutorial22/tutorial22.component';
 import { Tutorial23Component } from './tutorial23/tutorial23.component';
 import { Tutorial25Component } from './tutorial25/tutorial25.component';
+import { Tutorial24Component } from './tutorial24/tutorial24.component';
 
 
 
@@ -40,7 +41,8 @@ import { Tutorial25Component } from './tutorial25/tutorial25.component';
     Tutorial21Component,
     Tutorial22Component,
     Tutorial23Component,
-    Tutorial25Component
+    Tutorial25Component,
+    Tutorial24Component
   ],
   imports: [
     CommonModule,
