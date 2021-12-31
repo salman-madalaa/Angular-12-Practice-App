@@ -1,3 +1,7 @@
+# Initial Steps
+1) first must install all node modules for that use run the command " npm install  (or)  npm i "
+2) After that run the command " npm start "
+
 # Practice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
