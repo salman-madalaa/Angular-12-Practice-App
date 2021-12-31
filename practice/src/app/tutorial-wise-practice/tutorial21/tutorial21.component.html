@@ -1,1 +1,35 @@
-<p>tutorial21 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Header </b></h1>
+    </div>
+
+    <li> Make Header Component </li>
+    <li> Add Image and menu </li>
+    <li> Add style </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=XR7Q9Bu3pEI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=22">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Header </h1> <br>
+
+    <h3><u><b>Make Header Component</b></u>  :  <br>
+    1) First you create the header component from command line by using " ng g c header " this command <br>
+    2) After that you can add this in root module that is app.module.ts file  (when you run the above command by default this step is done automatically). <br>
+    3) And next you should use header component selector(app-header) inside the any component  then you want the header component at that module.
+    <u>Note</u> : In this app we already use the header component so check the code . <br>
+    I already add styles to the header component . <br>
+
+  </h3>
+
+
+  </div>
+</jqxSplitter>

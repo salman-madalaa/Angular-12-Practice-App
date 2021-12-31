@@ -1,1 +1,53 @@
-<p>tutorial23 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Toggle Element </b></h1>
+    </div>
+
+    <li> Make HTML Element nad button </li>
+    <li> Define and apply property </li>
+    <li> Update property for toggle </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=-5E-uRrMUKg&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=24">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Toggle Element </h1> <br>
+
+    <h3><u><b>Make HTML Element nad button</b></u> : <br>
+      <h4 *ngIf="display"> Welcome to CassiniPLM ! </h4>
+    </h3>
+    <hr>
+    <h3><u><b> Define and apply property </b></u> :</h3>
+    <h3>
+      1) create an display=true value in .ts file <br>
+      2) Apply that display value to the tag of "welcome to cassiniPLM !" .<br>
+      3) Then based on the display value show/hide result is displaying on the screen .
+    </h3>
+
+    <h3><u><b>Update property for toggle</b> : </u> <br>
+      1) we have to create a button like toggle . <br>
+      2) when we click on the button we can achieve the toggle functionality . <br>
+    </h3>
+    <h3> Example : </h3> <br>
+    <button mat-raised-button color="primary" (click)="toggle()"> Toggle</button> <br>
+    <h3 *ngIf="display1"> Welcome to CassiniPLM ! </h3>
+    <hr>
+    <h3><u><b>Interview Questations</b> : </u> <br>
+      1) What is Toggle Element ? <br>
+      A) <b> Same button click we want to show/hide the element </b>  that approach we called is Toggle . <br>
+      2) How you can Toggle the Element ? <br>
+      A) we can alpply a if condition with the property.
+      3) Why you are not using css property display:none ?
+      A) when we use display:none that time it still have to rendering on the screen then css will be just make it display:none  but it still take time to render the process .
+    </h3>
+
+  </div>
+</jqxSplitter>

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tutorial23.component.css']
 })
 export class Tutorial23Component implements OnInit {
-
+  display= true;
+  display1= true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggle(){
+    this.display1= !this.display1
   }
 
 }

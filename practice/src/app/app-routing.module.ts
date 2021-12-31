@@ -17,27 +17,33 @@ import { Tutorial22Component } from './tutorial-wise-practice/tutorial22/tutoria
 import { Tutorial23Component } from './tutorial-wise-practice/tutorial23/tutorial23.component';
 import { Tutorial24Component } from './tutorial-wise-practice/tutorial24/tutorial24.component';
 import { Tutorial25Component } from './tutorial-wise-practice/tutorial25/tutorial25.component';
+import { Tutorial26Component } from './tutorial-wise-practice/tutorial26/tutorial26.component';
+import { Tutorial27Component } from './tutorial-wise-practice/tutorial27/tutorial27.component';
+import { Tutorial28Component } from './tutorial-wise-practice/tutorial28/tutorial28.component';
 
 const routes: Routes = [
-  {path: 'home',component: HomeComponent},
-  {path: 'tutorial/11', component:Tutorial11Component},
-  {path: 'tutorial/12', component:Tutorial12Component},
-  {path: 'tutorial/13', component:Tutorial13Component},
-  {path: 'tutorial/14', component:Tutorial14Component},
-  {path: 'tutorial/15', component:Tutorial15Component},
-  {path: 'tutorial/16', component:Tutorial16Component},
-  {path: 'tutorial/17', component:Tutorial17Component},
-  {path: 'tutorial/18', component:Tutorial18Component},
-  {path: 'tutorial/19', component:Tutorial19Component},
-  {path: 'tutorial/20', component:Tutorial20Component},
-  {path: 'tutorial/21', component:Tutorial21Component},
-  {path: 'tutorial/22', component:Tutorial22Component},
-  {path: 'tutorial/23', component:Tutorial23Component},
-  {path: 'tutorial/24', component:Tutorial24Component},
-  {path: 'tutorial/25', component:Tutorial25Component},
+  { path: 'home', component: HomeComponent },
+  { path: 'tutorial/11', component: Tutorial11Component },
+  { path: 'tutorial/12', component: Tutorial12Component },
+  { path: 'tutorial/13', component: Tutorial13Component },
+  { path: 'tutorial/14', component: Tutorial14Component },
+  { path: 'tutorial/15', component: Tutorial15Component },
+  { path: 'tutorial/16', component: Tutorial16Component },
+  { path: 'tutorial/17', component: Tutorial17Component },
+  { path: 'tutorial/18', component: Tutorial18Component },
+  { path: 'tutorial/19', component: Tutorial19Component },
+  { path: 'tutorial/20', component: Tutorial20Component },
+  { path: 'tutorial/21', component: Tutorial21Component },
+  { path: 'tutorial/22', component: Tutorial22Component },
+  { path: 'tutorial/23', component: Tutorial23Component },
+  { path: 'tutorial/24', component: Tutorial24Component },
+  { path: 'tutorial/25', component: Tutorial25Component },
+  { path: 'tutorial/26', component: Tutorial26Component },
+  { path: 'tutorial/27', component: Tutorial27Component },
+  { path: 'tutorial/28', component: Tutorial28Component },
 
-  {path: '',redirectTo: 'home',pathMatch: 'full'},
-  {path: '**', component:PageNotFoundComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

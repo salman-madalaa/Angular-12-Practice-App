@@ -1,0 +1,58 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Send data to child component </b></h1>
+    </div>
+
+    <li> Make child component </li>
+    <li> Use child component </li>
+    <li> Send data from parent component </li>
+    <li> Use Data in child component</li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=xbFdFreTi1k&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=28">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Send data to child component </h1> <br>
+
+    <h3><u><b>Make child component</b></u>: <br>
+      For to create child component we have to run the command <b> ng g c child </b>
+    </h3>
+    <hr>
+    <h3><u><b>Use child component</b></u>: <br>
+      For to use child component you can add that selector in the parent component . <br>
+      Suppose if you are write the child selector inside the app.component.html at that time app.component.html is the parent . <br>
+      Now I am using the child selector inside the tutorial27.component.html file so this file is the parent .
+    </h3>
+
+    <h3><u><b>Send data from parent component</b></u>: <br>
+      If we send data from parent to child we can give that data inside the child selector which is present in the parent . <br>
+     <u>Ex </u> : For example now I send data to the child component from tutorial27.component.html ,i give the data inside the child selector([item]="data") which is present in the tutorial27.component.html . Here item is the variable you can write any name . <br>
+     Next we have to go child.component.ts file and give input decorator like <b> @Input() item </b> . Here name should be same as we give in the child selector which is present in parent tutorial27.component.html .
+    </h3>
+    <app-child [item]="data1"></app-child>
+    <br>
+    <h3>we have to send the data by click on the button : <br></h3>
+    <input type="text" #box placeholder="Enter text" class="form-control" style="width:250px"> <br>
+    <button mat-raised-button color="primary" (click)="update(box.value)">Send</button>
+    <app-child [item2]="data2"></app-child>
+
+    <hr>
+    <h3><u><b>Interview Questations</b></u>: <br>
+      1) from parent component can we call multiple components and send the data ?  <br>
+      A) yes  <br>
+      2) Can we send two values in one component selector ?  <br>
+      A) Yes  <br>
+      3) can we make nested child component ?  <br>
+      A) yes  <br>
+    </h3>
+
+  </div>
+</jqxSplitter>

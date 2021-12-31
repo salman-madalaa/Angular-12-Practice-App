@@ -60,6 +60,7 @@ const MaterialComponents=[
   MatListModule,
   MatSlideToggleModule,
   MatMenuModule,
+  
 
     A11yModule,
     CdkStepperModule,
@@ -102,6 +103,6 @@ const MaterialComponents=[
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'en-GB' }
   ],
-  
+
 })
 export class AngularMaterialModule { }

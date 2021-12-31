@@ -1,1 +1,71 @@
-<p>tutorial25 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Material UI </b></h1>
+    </div>
+
+    <li> Install Material UI </li>
+    <li> Check changes after install material UI </li>
+    <li> Add example of Material UI </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=WWMoTYvrSjY&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=26">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Material UI </h1> <br>
+
+    <h3><u><b>Install Material UI</b></u>:
+      1) What is Material UI? <br>
+      A) This is the html and css library. That can enhance the application look and feel . <br>
+      2) how it can enhance ? <br>
+      A) It can add some extra properties to our buttons,input fields,datepickers, ..etc . And they will look more
+      beautiful then the default style . <br>
+
+      Installation : <br>
+      Run the command : <b>ng add @angular/material</b> , it will ask some questations give 'yes' to all the
+      questations. <br>
+    </h3>
+
+    <h3><u><b> Check changes after install material UI </b></u> : <br>
+      After you run the above command you can see some changes occer in our project files <br>
+      Those files are : <br>
+      <span style="display:block;margin-left: 15px;">
+        1) angular.json : here it can add the styles of material ui from node_modules in styles section <br>
+        2) style.css : it add some basic styles in globally
+        3) package.json : it will add the dependencis like @angular/cdk and @angular/material
+        4) index.html : it add 3 links for font styles
+        5) app.module.ts : in this file it import the BrowserAnimationModule and register in imports section
+      </span>
+    </h3>
+
+    <h3><u><b> Add example of Material UI</b></u> : <br>
+      lets see if we use slider component first you need to import <b>MatIconModule</b> in side the app.module.ts and
+      register in imports section <br>
+      After that we use the mat icon selector (mat-icon) inside the html page <br>
+      lets See the Example : <br>
+      For icon :<mat-icon> home </mat-icon> <br>
+      For button : <button mat-button color="primary">Home</button>
+    </h3>
+
+    <h3><u><b>Interview Questations</b></u>: <br>
+      1) Material UI is a library or a framework ? <br>
+      A) libray <br>
+      2) do you have any alternative to Material UI ?<br>
+      A) yes, Bootstrap <br>
+      3) which one you want to choose bootstrap or material UI ?<br>
+      A) Based on the requirement . suppose if i want only a responsive wesite i choose bootsrap , for better UI at that
+      time i will choose Material UI <br>
+      4) is Material UI slow your application ? <br>
+      A) yes , because it add lots of classes and styles that's why it was slow our application .
+    </h3>
+
+
+  </div>
+</jqxSplitter>

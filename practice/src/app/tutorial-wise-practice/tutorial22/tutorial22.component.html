@@ -1,1 +1,47 @@
-<p>tutorial22 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Basic Angular Form </b></h1>
+    </div>
+
+    <li> Import Form module </li>
+    <li> Make simple Form </li>
+    <li> Get Form Value </li>
+    <li> print Value </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=-xDTNSEC8nM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=23">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Basic Angular Form </h1> <br>
+
+    <h3><u><b>Import Form module</b></u> : <br>
+      1) If you use forms in angular you must import FormsModule inside the app.module.ts file imports section.
+    </h3>
+    <hr>
+    <h3><u><b> Make simple Form</b></u> :</h3>
+    <h3>
+      1) create form tag and add some input boxes and submit button inside that form tag <br>
+      2) Next we define the form name by "  #basicForm="ngForm" " like this .<br>
+      3) next we descrit the function  to register/submit our form
+     </h3>
+    <form #basicForm="ngForm" (submit)="getDetails(basicForm.value)">
+      <input type="text" class="form-control" ngModel name="firstName"  placeholder="First Name"> <br>
+      <input type="text" class="form-control" ngModel name="lastName"  placeholder="Last Name"> <br>
+      <input type="email" class="form-control" ngModel name="email"  placeholder="Email"> <br>
+      <input type="number" class="form-control" ngModel name="phoneNumber"  placeholder="phone number"> <br>
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+    </form>
+
+    <h3><u>print Form Value</u> :</h3>
+    User Deatils :  {{userData.firstName}} -- {{userData.lastName}} -- {{userData.email}} -- {{userData.phoneNumber}}
+
+  </div>
+</jqxSplitter>

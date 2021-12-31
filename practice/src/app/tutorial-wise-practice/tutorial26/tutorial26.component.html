@@ -1,0 +1,33 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Todo list </b></h1>
+    </div>
+
+    <li> Make textbox and Button </li>
+    <li> Add task on button click </li>
+    <li> show list of tasks </li>
+    <li> Remove item from todo list </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=4kDeGqXc1ZU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=27">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Todo list with angular </h1> <br>
+
+    <h3><u><b>Make textbox and Button</b></u>:</h3>
+
+    <input type="text" name="" class="form-control" style="width:250px" placeholder="Enter new Task" #task> <br> <br>
+    <button  mat-raised-button color="primary"(click)="addTask(task.value)">Add New task</button>
+    <br>
+    <ul *ngFor="let item of list;">
+      <li>{{item.name}} <button mat-button (click)="removeTask(item.id)"><mat-icon color="warn">delete</mat-icon> </button> </li>
+    </ul>
+  </div>
+</jqxSplitter>
