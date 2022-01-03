@@ -1,0 +1,11 @@
+
+li{
+  font-size:15px;
+  padding-top:5px;
+  background-color: skyblue;
+  color: white;
+  width:30%;
+  display: block;
+  padding: 10px;
+  border: 2px solid orange;
+}

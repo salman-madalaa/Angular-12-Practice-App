@@ -1,0 +1,54 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Template Reference variable </b></h1>
+    </div>
+
+    <li> Use of template variable </li>
+    <li> Make input type </li>
+    <li> Use Template Ref variable </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=6_ntV0zBOMY&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=32">Video Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Template Reference variable </h1> <br>
+
+    <h3><u><b> Use of template variable  </b></u>: <br>
+      1) What is the use of template Ref variable ?. <br>
+      A) we have to get property  of input box in two way a) by using DOM like id  b) template ref variable  <br>
+         Suppose if we want to get all the properties of input field easily by using the template ref variable
+    </h3>
+    <hr>
+    <h3><u><b> Make input type and Use Template Ref variable </b></u>: <br>
+     <u>Syntax : </u>  #box <br>
+      input box: <input type="text" class="form-control" style="width:250px" name="username" placeholder="Enter Text" #box>
+      placeholder : {{box.placeholder}} <br>
+      name : {{box.name}} <br>
+      value : {{boxValue}} <br>
+
+      <button mat-raised-button color="primary" (click)="getInputValue(box)">click me</button>
+
+      <br>
+      In the above example we have to get the properties of the input box using template ref variable <br>
+      when we enter text input box after click on click me button then you can get the value what you enter in the input box .
+    </h3>
+
+    <hr>
+    <h3><u><b>Interview Questations</b></u>: <br>
+      1) What is the use of ref type variable ?  <br>
+      A) we can get the properties/attributes of input box  <br>
+      2) Can we any another way to get the properties/attributes of the input box ?  <br>
+      A) Yes we can directly use DOM ,listeners,..  <br>
+      3) What should be the type of this 'val' inside the function of getInputValue() when you use directly template reference variable ?   <br>
+      A) At that time it should be HTMLINPUTELEMENT. there are different types of if you have anchor tag you can use HTMLAnchorElement .. like this <br>
+    </h3>
+
+  </div>
+</jqxSplitter>

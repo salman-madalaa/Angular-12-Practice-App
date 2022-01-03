@@ -28,6 +28,12 @@ import { Tutorial27Component } from './tutorial27/tutorial27.component';
 import { Tutorial28Component } from './tutorial28/tutorial28.component';
 import { ChildComponent } from './tutorial27/child/child.component';
 import { UserDetailsComponent } from './tutorial28/user-details/user-details.component';
+import { Tutorial29Component } from './tutorial29/tutorial29.component';
+import { Tutorial30Component } from './tutorial30/tutorial30.component';
+import { Tutorial31Component } from './tutorial31/tutorial31.component';
+import { Tutorial32Component } from './tutorial32/tutorial32.component';
+import { Tutorial33Component } from './tutorial33/tutorial33.component';
+import { Child1Component } from './tutorial29/child1/child1.component';
 
 
 
@@ -55,6 +61,12 @@ import { UserDetailsComponent } from './tutorial28/user-details/user-details.com
     Tutorial28Component,
     ChildComponent,
     UserDetailsComponent,
+    Tutorial29Component,
+    Tutorial30Component,
+    Tutorial31Component,
+    Tutorial32Component,
+    Tutorial33Component,
+    Child1Component,
   ],
   imports: [
     CommonModule,BrowserModule,
@@ -64,7 +76,7 @@ import { UserDetailsComponent } from './tutorial28/user-details/user-details.com
     AngularNgBootstrapModule
   ],
   bootstrap: [Tutorial24Component],
-  exports: [Tutorial24Component,ChildComponent],
+  exports: [Tutorial24Component,ChildComponent,UserDetailsComponent],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TutorialWisePracticeModule { }

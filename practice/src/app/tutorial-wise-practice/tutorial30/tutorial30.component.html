@@ -1,0 +1,37 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Two way binding </b></h1>
+    </div>
+
+    <li> What is two way binding </li>
+    <li> Make text input and define the  property </li>
+    <li> Import formsModule app.module </li>
+    <li> Test two way binding</li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=pRXJ2PYu22Q&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=31">Video Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Two way binding </h1> <br>
+
+    <h3><u><b> What is two way binding </b></u>: <br>
+      Two way binding simply means updating and displaying the property at the same time . <br>
+      For example if you have input field when ever you want to type something inside it you  want it that property will be update and it will display on the screen . <br>
+    </h3>
+    <hr>
+    <h3><u><b> Make text input and define the  property </b></u>: <br>
+     <u>Syntax : </u> [(ngModel)] = "value" . <br>
+     <u>Note</u> : If you want to use two way binding you must have to import FormsModule inside the app.module.ts  file.
+      <input type="text" placeholder="Enter Value" [(ngModel)]="value" class="form-control" style="width:250px">
+      {{value}}
+    </h3>
+
+  </div>
+</jqxSplitter>

@@ -20,6 +20,11 @@ import { Tutorial25Component } from './tutorial-wise-practice/tutorial25/tutoria
 import { Tutorial26Component } from './tutorial-wise-practice/tutorial26/tutorial26.component';
 import { Tutorial27Component } from './tutorial-wise-practice/tutorial27/tutorial27.component';
 import { Tutorial28Component } from './tutorial-wise-practice/tutorial28/tutorial28.component';
+import { Tutorial29Component } from './tutorial-wise-practice/tutorial29/tutorial29.component';
+import { Tutorial30Component } from './tutorial-wise-practice/tutorial30/tutorial30.component';
+import { Tutorial31Component } from './tutorial-wise-practice/tutorial31/tutorial31.component';
+import { Tutorial32Component } from './tutorial-wise-practice/tutorial32/tutorial32.component';
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,6 +46,10 @@ const routes: Routes = [
   { path: 'tutorial/26', component: Tutorial26Component },
   { path: 'tutorial/27', component: Tutorial27Component },
   { path: 'tutorial/28', component: Tutorial28Component },
+  { path: 'tutorial/29', component: Tutorial29Component },
+  { path: 'tutorial/30', component: Tutorial30Component },
+  { path: 'tutorial/31', component: Tutorial31Component },
+  { path: 'tutorial/32', component: Tutorial32Component },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },

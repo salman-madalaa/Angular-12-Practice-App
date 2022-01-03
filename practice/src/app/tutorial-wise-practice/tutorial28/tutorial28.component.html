@@ -21,29 +21,23 @@
 
   <!-- ----------------------- This is Right Side panel----------------- -->
   <div class="splitter-panel">
-    <h1 style="text-align:center"> Send data to child component </h1> <br>
+    <h1 style="text-align:center"> Reusuable Component </h1> <br>
 
     <h3><u><b>Make child component</b></u>: <br>
-      For to create child component we have to run the command <b> ng g c child </b>
+      For to create child component we have to run the command <b> ng g c user-details </b>
     </h3>
     <hr>
-    <h3><u><b>Use child component</b></u>: <br>
-      For to use child component you can add that selector in the parent component . <br>
-      Suppose if you are write the child selector inside the app.component.html at that time app.component.html is the parent . <br>
-      Now I am using the child selector inside the tutorial27.component.html file so this file is the parent .
+    <h3><u><b> Use child component in For Loop </b></u>: <br>
+      Now I will create user details array inside the parent component.ts file <br>
+      Next I will create a span tag for to write  " For Loop " . <br>
+      Next I will use user-details selector inside the "For Loop " for to send each record to child(user-details) component .<br>
+      So that we can use the child component inside the For Loop .
     </h3>
 
-    <h3><u><b>Send data from parent component</b></u>: <br>
-      If we send data from parent to child we can give that data inside the child selector which is present in the parent . <br>
-     <u>Ex </u> : For example now I send data to the child component from tutorial27.component.html ,i give the data inside the child selector([item]="data") which is present in the tutorial27.component.html . Here item is the variable you can write any name . <br>
-     Next we have to go child.component.ts file and give input decorator like <b> @Input() item </b> . Here name should be same as we give in the child selector which is present in parent tutorial27.component.html .
-    </h3>
-    <!-- <app-child [item]="data1"></app-child>
-    <br>
-    <h3>we have to send the data by click on the button : <br></h3>
-    <input type="text" #box placeholder="Enter text" class="form-control" style="width:250px"> <br>
-    <button mat-raised-button color="primary" (click)="update(box.value)">Send</button>
-    <app-child [item2]="data2"></app-child> -->
+    <span *ngFor="let userDetail of userDetails">
+      <app-user-details [item]="userDetail" ></app-user-details>
+    </span>
+
 
     <hr>
     <h3><u><b>Interview Questations</b></u>: <br>

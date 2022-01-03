@@ -1,0 +1,47 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Send data child to parent component </b></h1>
+    </div>
+
+    <li> Make child component </li>
+    <li> Use child component in parent component </li>
+    <li> Send function from parent component </li>
+    <li> call function in child component</li>
+    <li> Get data in Parent component </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=ffCG8Xi3RcU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=30">Video Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Send data child to parent component </h1> <br>
+
+    <h3><u><b>Make child component</b></u>: <br>
+      For to create child component we have to run the command <b> ng g c user-details </b>
+    </h3>
+    <hr>
+    <h3><u><b> Use child component in parent component </b></u>: <br>
+      Now I will create user details array inside the parent component.ts file <br>
+      Next I will use child1 selector inside theParent component (tutorial29.component.html) .<br>
+      Next I will define a function updateData() inside the tutorial27.component.ts file <br>
+      Next I will write updateDataEvent inside the child1 selector <br>
+      Next I goto child1 component and write @Output() decorator inside child component, with same name which we write on the tutorial29.component.html file <br>
+      Next I will create a input box and button inside the child component .When i enter tha text inside the child component and click button i call updateDataEvent.emit(box.value) functon which is @Output decorator . <br>
+      See the below exampe :
+    </h3>
+
+    <h1>Child Component : </h1> <app-child1 (updateDataEvent)="updateData($event)" ></app-child1>
+
+      <br>
+
+      <h1>{{data}}</h1>
+
+
+  </div>
+</jqxSplitter>
