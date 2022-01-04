@@ -34,6 +34,11 @@ import { Tutorial31Component } from './tutorial31/tutorial31.component';
 import { Tutorial32Component } from './tutorial32/tutorial32.component';
 import { Tutorial33Component } from './tutorial33/tutorial33.component';
 import { Child1Component } from './tutorial29/child1/child1.component';
+import { Tutorial34Component } from './tutorial34/tutorial34.component';
+import { Tutorial35Component } from './tutorial35/tutorial35.component';
+import { Tutorial36Component } from './tutorial36/tutorial36.component';
+import { USDINRPipe } from '../customePipes/usd-inr.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -67,16 +72,22 @@ import { Child1Component } from './tutorial29/child1/child1.component';
     Tutorial32Component,
     Tutorial33Component,
     Child1Component,
+    Tutorial34Component,
+    Tutorial35Component,
+    Tutorial36Component,
+
+    USDINRPipe
   ],
   imports: [
     CommonModule,BrowserModule,
     jqxSplitterModule,
     AngularMaterialModule,
     FormsModule,RouterModule,
-    AngularNgBootstrapModule
+    AngularNgBootstrapModule,
+    HttpClientModule,
   ],
   bootstrap: [Tutorial24Component],
-  exports: [Tutorial24Component,ChildComponent,UserDetailsComponent],
+  exports: [Tutorial24Component,ChildComponent,UserDetailsComponent,USDINRPipe],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TutorialWisePracticeModule { }

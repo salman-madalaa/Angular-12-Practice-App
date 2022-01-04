@@ -1,0 +1,106 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Advance Pipes </b></h1>
+    </div>
+
+    <li> Params with pipes </li>
+    <li> Use 2 pipes at the same time </li>
+    <li> Number pipes </li>
+    <li> Slice pipe </li>
+    <li> Currency pipe </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=rcu1pNqYn2Y&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=35">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Advance Pipes </h1> <br>
+
+    <h3><u><b> Params with pipes </b></u>: <br>
+      In pipes we also pass the paramaeters for get some periculer string in a string text . <br>
+      For Example in 'cassiniplm' we want only 'plm' string then at that time we have to pass the parameters . <br>
+      {{ 'cassinplm' | slice:6}}
+      <br>
+      <u>Syntax</u> : " | slice:6 "
+
+    </h3>
+    <hr>
+
+    <h3><u><b> Use 2 pipes at the same time </b></u>: <br>
+      {{ 'cassinplm' | slice:6 | uppercase}} <br>
+      In the above example we use two pipes at the same time . we pass the 'cassiniplm' string through the "slice:6 "
+      pipe then we can get 'plm', and pass that 'plm' text through the uppercase pipe it convert to uppercase .
+    </h3>
+
+    <hr>
+    <h3>
+      In angular there are different types of pipes are present : <br>
+      <b> uppercase, lowercase, date, date: 'fullDate', date: 'shortTime', date: 'd/M/y', currency, DecimalPipe, json,
+        percent ........etc </b>
+    </h3>
+
+    <h3><u><b>Example</b></u> : <br>
+      <u>UpperCase Pipe :</u> <br>
+      {{ 'cassiniplm' | uppercase }} = this is for uppercase <br>
+      <hr>
+
+      <u>LowerCase Pipe :</u> <br>
+      {{ 'CASSINIPLM' | lowercase}} = this is for lowercase <br>
+      <hr>
+
+      <u>Date Pipe :</u> <br>
+      {{today}}
+      {{ today | date: 'fullDate' }} = this is for full Date <br>
+      {{ today | date: 'shortTime' }} = this is for short Date <br>
+      {{ today | date: 'dd/MM/yyyy' }} = this is for date format based on the format<br>
+      <hr>
+
+      <u>Currency Pipe :</u> <br>
+      {{ 1234.56 | currency:"CAD" }} <br>
+      {{ 1234.56 | currency:'CAD':'symbol-narrow'}} = this is for currency <br>
+      <hr>
+
+      <u>Decimal Pipe :</u> <br>
+      {{ 3.14159265 | number: '3.1-2' }} = this is for decimal before the dot(.) 3 numbers, after the (.) dot we have 2
+      digits <br>
+      {{ 3.14159265 | number: '1.4-4' }} = this is for decimal after the (.) dot we have 4 digits .
+      <hr>
+
+      <u>Json Pipe : </u> <br>
+      with out pipe : {{ jsonVal }} <br>
+      with one pipe : {{ jsonVal | json}} <br>
+      with two pipes : {{ jsonVal | json | uppercase}} <br>
+      <hr>
+
+      <u>Percent Pipe : </u> <br>
+      {{ 0.123456 | percent }} <br>
+      {{ 0.123456 | percent: '2.1-2' }} <br>
+      {{ 0.123456 | percent : "10.4-4" }} <br>
+      <hr>
+
+      <u>Slice Pipe : </u> <br>
+      {{ [1,2,3,4,5,6] | slice:1:4 }} <br>
+      {{ [1,2,3,4,5,6] | slice:2 }} <br>
+      {{ [1,2,3,4,5,6] | slice:2:-2 }} <br>
+      <ul>
+        <li *ngFor="let v of [1,2,3,4,5,6] | slice:2:-1">
+          {{v}}
+        </li>
+      </ul>
+    </h3>
+    <hr>
+
+    <h3><u><b>Interview Questation</b></u> : <br>
+      1) How you can make title case to a string ? <br>
+      A) we use titlecase pipe . example: {{ 'cassniplm' | titlecase}} here i use " | titlecase " pipe.
+    </h3>
+
+  </div>
+</jqxSplitter>

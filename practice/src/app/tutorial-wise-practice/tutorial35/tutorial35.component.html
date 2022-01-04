@@ -1,0 +1,42 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Custome Pipes </b></h1>
+    </div>
+
+    <li> Make a custom pipe with command line </li>
+    <li> Apply custom pipe </li>
+    <li> Update custom pipe file </li>
+    <li> Apply Params in custom pipes </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=P2587FN4Y0w&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=36">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Custome Pipes </h1> <br>
+
+    <h3><u><b> Make a custom pipe with command line </b></u>: <br>
+      In angular we can make our own custome pipes also. <br>
+      For to create custom custom pipe we have one command : <b>ng g p pipeName</b> <br>
+    </h3>
+    <hr>
+
+    <h3><u><b> Apply custom pipe </b></u>: <br>
+      Use that pipe name after the ' | ' symbol ,then that value come into the pipe.ts file. <br>
+      Implement our own required formate in pipe.ts file . so that we can change the value into our required formate. <br>
+    </h3>
+
+    <input type="text" name="Cost" [(ngModel)]="cost" placeholder="Enter Doller Number">
+
+    convert doller to Rupee :  {{cost | USDINR }}
+
+
+  </div>
+</jqxSplitter>

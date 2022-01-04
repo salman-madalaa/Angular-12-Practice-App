@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tutorial33Component implements OnInit {
 
+  today=Date();
+
+  jsonVal = { moo: 'foo', goo: { too: 'new' }}
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  capString(item:string){
+    return item.toUpperCase();
+  }
 }

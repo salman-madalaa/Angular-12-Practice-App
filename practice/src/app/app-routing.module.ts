@@ -24,6 +24,10 @@ import { Tutorial29Component } from './tutorial-wise-practice/tutorial29/tutoria
 import { Tutorial30Component } from './tutorial-wise-practice/tutorial30/tutorial30.component';
 import { Tutorial31Component } from './tutorial-wise-practice/tutorial31/tutorial31.component';
 import { Tutorial32Component } from './tutorial-wise-practice/tutorial32/tutorial32.component';
+import { Tutorial33Component } from './tutorial-wise-practice/tutorial33/tutorial33.component';
+import { Tutorial34Component } from './tutorial-wise-practice/tutorial34/tutorial34.component';
+import { Tutorial35Component } from './tutorial-wise-practice/tutorial35/tutorial35.component';
+import { Tutorial36Component } from './tutorial-wise-practice/tutorial36/tutorial36.component';
 
 
 const routes: Routes = [
@@ -50,6 +54,11 @@ const routes: Routes = [
   { path: 'tutorial/30', component: Tutorial30Component },
   { path: 'tutorial/31', component: Tutorial31Component },
   { path: 'tutorial/32', component: Tutorial32Component },
+  { path: 'tutorial/33', component: Tutorial33Component },
+  { path: 'tutorial/34', component: Tutorial34Component },
+  { path: 'tutorial/35', component: Tutorial35Component },
+  { path: 'tutorial/36', component: Tutorial36Component },
+
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },

@@ -1,1 +1,69 @@
-<p>tutorial33 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Pipes in Angular </b></h1>
+    </div>
+
+    <li> Use of pipes </li>
+    <li> Problems that can resolve with pipes </li>
+    <li> Example </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=IZ7GxYOsERk&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=34">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Pipes in Angular </h1> <br>
+
+    <h3><u><b> Use of pipes </b></u>: <br>
+      Pipes are basically use for transfor the data from one formate to another formate . for example you have a string
+      and you want to make it uppercase/lowercase you can use pipes . update the date formate ,and you wan to apply the
+      percentage or number ....
+    </h3>
+    <hr>
+
+    <h3><u><b> Problems that can resolve with pipes </b></u>: <br>
+      If we want to chnage the formate of text like uppercase,lowercase we don't need to write special code . <br>
+      In angular in built pipes are available .
+      <u>Syntax </u> : " | " <br>
+      Ex: {{ 'salman' | uppercase }} Here salman is the lowercase text convert into uppercase . <br>
+      In angular there are different types of pipes are present : <br>
+      <b> uppercase, lowercase, date, date: 'fullDate', date: 'shortTime', date: 'd/M/y', currency, DecimalPipe, json,
+        percent ........etc </b>
+    </h3>
+
+    <h3><u><b>Example</b></u> : <br>
+      <u>UpperCase Pipe :</u> <br>
+      {{ 'cassiniplm' | uppercase }} = this is for uppercase <br>
+      <hr>
+      <u>LowerCase Pipe :</u> <br>
+      {{ 'CASSINIPLM' | lowercase}} = this is for lowercase <br>
+      <hr>
+      <u>Date Pipe :</u> <br>
+      {{today}}
+      {{ today | date: 'fullDate' }} = this is for full Date <br>
+      {{ today | date: 'shortTime' }} = this is for short Date <br>
+      {{ today | date: 'dd/MM/yyyy' }} = this is for date format based on the format<br>
+    </h3>
+    <hr>
+    <h3>
+      1) is it mandatory to use only pipes to make lowercase and uppercase formate? <br>
+      A) No , we can also make out own custome functions . <br>
+      Ex : let make the function capString() and it have a parameter item type of string in .ts file . And we call that
+      fuction from html file then we can get the result . <br>
+      {{capString('cassiniPLM')}}
+    </h3>
+    <h3>
+      <u>Note </u> : If we follow the above process we have to write the function and return toUppercase() value like
+      this . So this process we have to write lot of code . so that pipes more useful to reduce this much of code . In
+      pipes we simply write " | uppercase ". the it convert automatically text into uppercase .
+    </h3>
+
+  </div>
+</jqxSplitter>

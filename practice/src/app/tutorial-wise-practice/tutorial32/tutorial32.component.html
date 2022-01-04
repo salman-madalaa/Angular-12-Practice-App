@@ -1,1 +1,64 @@
-<p>tutorial32 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Basics of Type Script for Angular </b></h1>
+    </div>
+
+    <li> Why videos TS in angular tutorial </li>
+    <li> Basic Types. </li>
+    <li> How to use types with property </li>
+    <li> Type with object and array </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=p36ehVmF0CM&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=33">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Basics of Type Script for Angular </h1> <br>
+
+    <h3><u><b> Why videos TS in angular tutorial ? </b></u>: <br>
+      when ever we are working with angular we are susing core javascript.<br>
+      With the type script we can provide types to our functions to our properties . <br>
+      Ex : data :number = 20 here data must be number only so the it can not access string .
+    </h3>
+    <hr>
+
+    <h3><u><b> Basic Types </b></u>: <br>
+      Here are some basic types like <b>number, string, boolean, any... etc </b> <br>
+      And we have assign two type also <b> Ex: data: number | string </b> then data will access only these two types .
+      <br>
+      This can write inside the function parameters also working Ex: getData(item:number | string) like this . <br>
+      if you assign value to the variable ,then type script defaulty assign the type based on the given value <br>
+      Ex : item = 20 the item type number is declared automatically . when you can hover the cursor on item it will show
+      item:number . <br>
+      <u>Note</u> : any is never recommended . Because it decreases the power of TypeScript .
+    </h3>
+
+    <h3><u><b>Type with object and array</b></u> : <br>
+      <u> Syntax : </u> Object : Ex:  " obj : [name:string,phn:number] = [name:"salman",phn:123]  " <br>
+      <u>Note : </u>inplace of '[]' please put 'flower brackets' , here i put [] for  removing error for to define syntax .<br>
+      Array : arr :number[]=[10,20,30,40,50] so this array accept only numbers . <br>
+      for string array syntax : arr : string[]=["salman","visesh","vijay","prasad"] <br>
+      <br>
+      Suppose If we want to assign two typs array in a same array that is also possible .<br>
+      <u>Syntax :</u> Ex : arr2 : (string | number )[]=["salman",20,"vijay",30] <br>
+      So that we can pass two types of values in a same array <b>arr2 </b> based on the above syntax .
+    </h3>
+
+    <h3><u><b>Interview Questations</b></u> : <br>
+    1) can we use Type script only in angular ? <br>
+    A) No , wecan use Type script in react ,vue, also . <br>
+    2) Is there any difference between Type script and JavaScript ? <br>
+    A) yes , Type script is the extended version of javascript. Here we can define class and types of propertiesand objects and array .Here we can also define the interface,inheritence,enums...etc <br>
+    3) can a browser compile the type script ? <br>
+    A) No, in angular in build type script compiler , this compiler convert the type script code into javascript .Then it will run on our browser .
+    </h3>
+
+  </div>
+</jqxSplitter>

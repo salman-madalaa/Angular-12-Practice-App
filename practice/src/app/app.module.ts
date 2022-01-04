@@ -9,10 +9,12 @@ import { TutorialWisePracticeModule } from './tutorial-wise-practice/tutorial-wi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AngularNgBootstrapModule } from './angular-ng-bootstrap/angular-ng-bootstrap.module';
+import { USDINRPipe } from './customePipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { AngularNgBootstrapModule } from './angular-ng-bootstrap/angular-ng-boot
   ],
   providers: [],
   // schemas: [ CUSTOM_ELEMENTS_SCHEMA],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [USDINRPipe]
 })
 export class AppModule { }
