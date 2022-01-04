@@ -1,0 +1,69 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Template Driven Forms </b></h1>
+    </div>
+
+    <li> What are the template-driven Forms? </li>
+    <li> Make simple Forms </li>
+    <li> Get form value in ts file. </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=whr14XxB8-M&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=38">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Template Driven Forms </h1> <br>
+
+    <h3><u><b> What are the template-driven Forms </b></u>: <br>
+      The forms which are handle in side our template (.html) file is called template driven forms . <br>
+      Here we can handle getting and setting of values , apply the validations , show the error messages... everything
+      we will handled inside our .html file . <br>
+      <b><u>Note :</u></b> When we have to show 8 to 10 fields that time template driven forms are suitable . <br>
+      <b><u>Note :</u></b> When we have very large forms like 20 fields a that time Reactive forms are suitable .
+    </h3>
+    <hr>
+
+    <h3><u><b> Make simple Forms </b></u>: <br>
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" class=""
+        style="border: 1px solid black;width:50%;text-align:center">
+        <input type="text" name="username" placeholder="Username" ngModel> <br> <br>
+        <input type="text" name="password" placeholder="password" ngModel> <br> <br>
+        <button mat-raised-button color="primary"> login</button> <br>
+
+        {{loginForm.value | json}}
+
+      </form>
+      <br><br>
+      step 1: After You write the form tag we have to define template variable for this form like ' #loginForm' <br>
+      step 2:Every form have its unique template variable . <u>Syntax :</u> #loginForm="ngForm" <br>
+      step 3:Next we have to call an event ngSubmit to submit the data. <br>
+      step 4:Next when you click on the login button you can get the empty values in the login method which is in '.ts'
+      file <br>
+      step 5:Because you mush have bind the input box values with the " ngModel " <br>
+
+      <b><u>Note :</u></b> When we use template driven forms dont use form-control class . <br>
+      <b><u>Note :</u></b> When we use template driven name property must be included in input tag . Because for binding
+      the forms with the input fields we must have name to the input field . Based on the name property the value should
+      be bind.
+
+    </h3>
+
+
+    <h3><u><b> Interview Questations </b></u> : <br>
+      1) When we have the submit button out side the form tag then we click on the is it submit the form ? <br>
+      A) Yes , when we use the submit button which is out we have to write click event like
+      (click)="login(loginForm.value)" <br>
+      2) What happend when we remove the name property of the input box?
+      A) if you remove name property of the input box then we can not access the value of the input box . In template
+      driven forms name property must be required. based on the name property we can get the values.
+    </h3>
+
+  </div>
+</jqxSplitter>

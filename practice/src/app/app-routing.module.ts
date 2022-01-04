@@ -28,6 +28,10 @@ import { Tutorial33Component } from './tutorial-wise-practice/tutorial33/tutoria
 import { Tutorial34Component } from './tutorial-wise-practice/tutorial34/tutorial34.component';
 import { Tutorial35Component } from './tutorial-wise-practice/tutorial35/tutorial35.component';
 import { Tutorial36Component } from './tutorial-wise-practice/tutorial36/tutorial36.component';
+import { Tutorial37Component } from './tutorial-wise-practice/tutorial37/tutorial37.component';
+import { Tutorial38Component } from './tutorial-wise-practice/tutorial38/tutorial38.component';
+import { Tutorial39Component } from './tutorial-wise-practice/tutorial39/tutorial39.component';
+import { Tutorial40Component } from './tutorial-wise-practice/tutorial40/tutorial40.component';
 
 
 const routes: Routes = [
@@ -58,7 +62,10 @@ const routes: Routes = [
   { path: 'tutorial/34', component: Tutorial34Component },
   { path: 'tutorial/35', component: Tutorial35Component },
   { path: 'tutorial/36', component: Tutorial36Component },
-
+  { path: 'tutorial/37', component: Tutorial37Component },
+  { path: 'tutorial/38', component: Tutorial38Component },
+  { path: 'tutorial/39', component: Tutorial39Component },
+  { path: 'tutorial/40', component: Tutorial40Component },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },

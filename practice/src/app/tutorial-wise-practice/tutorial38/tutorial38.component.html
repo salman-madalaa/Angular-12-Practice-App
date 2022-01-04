@@ -1,0 +1,68 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Template Driven Form Validation </b></h1>
+    </div>
+
+    <li> Use Form from the last Video </li>
+    <li> Apply required validation </li>
+    <li> show error message </li>
+    <li> Other validation examples </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=cVd4ZCIXprs&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=39">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> Template-Driven Form Validation </h1> <br>
+
+    <h3> <b> <u> Template-Driven Form Validation </u></b> : <br>
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" class=""
+        style="border: 1px solid black;width:50%;text-align:center">
+        <input type="text" name="username" #username="ngModel" pattern="[a-zA-Z]+$" placeholder="Username" ngModel
+          required> <br>
+        <span *ngIf="username.invalid && username.touched" style="color:red">Please enter valid input </span>
+        <br>
+        <input type="text" name="password" #password="ngModel" placeholder="password" ngModel required minlength="8">
+        <br>
+        <span *ngIf="password.invalid && password.touched" style="color:red">Please enter password input </span>
+        <br>
+        <input type="text" name="email" #email="ngModel" email placeholder="email" ngModel required> <br>
+        <span *ngIf="email.invalid && email.touched" style="color:red">Please enter valid email input </span>
+        <br>
+        <button mat-raised-button color="primary" [disabled]="loginForm.invalid"> login</button> <br>
+
+        {{loginForm.value | json}}
+
+      </form>
+    </h3>
+
+    <h3> <b> <u> Apply required validation </u></b> : <br>
+      For this we need to add two things one is <b>required</b> property ,and second is give an id like "
+      (#name="ngModel") "to the input box . <br>
+    </h3>
+    <hr>
+
+    <h3><b><u> show error message </u></b> : <br>
+      --> For to show the error message we will take a span tag inside that we gave a if conditions based on the text
+      box touched,invalid,... <br>
+      --> For to know that the input box is touched or not we give an id to the input box like " (#username="ngModel") "
+      through that the id we know that the input box all properties we can access . <br>
+    </h3>
+    <hr>
+
+    <h3><b><u> Other validation examples </u></b> : <br>
+    --> For to give other validations like only numbers, email formates, enter only letters....etc <br>
+    --> For to give <b> only letters </b> we give the properties like <u>required, pattern .</u>  <b>Syntax</b> : pattern="[a-zA-Z]+$" <br>
+    --> For to give <b> only Numbers </b> we give the propertys like <u>required, pattern. </u> <b>Syntax</b> : pattern="[0-9]+$" <br>
+    --> For to give <b> email </b> we give the propertys like <u> required, email . </u>
+  </h3>
+
+  </div>
+</jqxSplitter>

@@ -39,6 +39,10 @@ import { Tutorial35Component } from './tutorial35/tutorial35.component';
 import { Tutorial36Component } from './tutorial36/tutorial36.component';
 import { USDINRPipe } from '../customePipes/usd-inr.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { Tutorial37Component } from './tutorial37/tutorial37.component';
+import { Tutorial38Component } from './tutorial38/tutorial38.component';
+import { Tutorial39Component } from './tutorial39/tutorial39.component';
+import { Tutorial40Component } from './tutorial40/tutorial40.component';
 
 
 
@@ -75,8 +79,12 @@ import { HttpClientModule } from '@angular/common/http';
     Tutorial34Component,
     Tutorial35Component,
     Tutorial36Component,
+    Tutorial37Component,
+    Tutorial38Component,
+    Tutorial39Component,
+    Tutorial40Component,
+    USDINRPipe,
 
-    USDINRPipe
   ],
   imports: [
     CommonModule,BrowserModule,
