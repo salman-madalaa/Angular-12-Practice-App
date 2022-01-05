@@ -1,1 +1,77 @@
-<p>tutorial39 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Reactive Form in Angular </b></h1>
+    </div>
+
+    <li> Make A Simple Form </li>
+    <li> Import module and form control </li>
+    <li> Connect Form controls with Form </li>
+    <li> Get Values from Form </li>
+    <li> Default value in Form </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=8k4ctDmVn7w&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=40">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> Reactive Form in Angular</u> </h1> <br>
+
+    <h3> <b> <u> Make A Simple Form </u></b> : <br>
+      --> In Reactive Form most of the code will be in class file that is .ts file . <br>
+      <b><u>Note</u></b>: If you want to use the reactive forms you must have to import the <b> ReactiveFormsModule</b>
+      in the module.ts file <br>
+      --> Go to module.ts file go to import section and import ReactiveFormsModule <br>
+      --> After import the ReactiveFormsModule , go to the component.ts file and import two more imports
+      FormGroup,FormControl <br>
+    </h3>
+    <hr>
+    <h3> <b> <u> Connect Form controls with Form </u></b> : <br>
+      --> <b><u>FormGroup</u></b> : It will control our complete form. And it will handle that what we are getting
+      inside the complete form and this is valid or not . <br>
+      --> <b><u>FormControl</u></b> : it will specificly handle a single input field. <br>
+
+      --> Next we have to write <b> studentForm = new FormGroup(
+        name:new FormControl(''),
+        email:new FormControl(''),
+        phoneNumber:new FormControl(''),
+        address:new FormControl(''),
+        marks:new FormControl(''),
+        ) </b> inside the .ts file. <br>
+      -->Next we bind that the <b>studentForm</b> in the form tag like [FormGroup]="studentForm" . So that we can get
+      all the values from the form .
+      --> When we use formGroup in form tag we must have to specify the name like <b> formControlName =" " </b> to the
+      every input field . <br>
+      <b><u>Note</u></b> : studentForm which is the value of the FormGroup should be match with the .ts file name . And
+      formControlName should be match with the names which we give inside the formGroup in .ts file <br>
+
+      <br>Example : <br>
+
+      <form [formGroup]="studentForm" (ngSubmit)="registration()">
+        <input type="text" placeholder="Enter Name" formControlName="name"> <br> <br>
+        <input type="email" placeholder="Enter Email" formControlName="email"> <br> <br>
+        <input type="text" placeholder="Enter Phone Number" formControlName="phoneNumber"> <br> <br>
+        <input type="text" placeholder="Enter Address" formControlName="address"> <br> <br>
+        <input type="text" placeholder="Enter Marks" formControlName="marks"> <br> <br>
+        <button type="submit" mat-raised-button color="primary">Submit</button>
+
+      </form>
+
+    </h3>
+    <hr>
+    <h3> <b> <u> Get Values from Form </u></b> : <br>
+      --> when we click on the submit button we can send the form group values like <b>studentForm.value</b> into that
+      function . so that we can get the form values .
+    </h3>
+    <br>
+    <h3> <b> <u> Default value in Form </u></b> : <br>
+      If we want to give default value we will pass the values inside the FormControl like <b> FormControl('salman') </b> in .ts file
+    </h3>
+
+  </div>
+</jqxSplitter>

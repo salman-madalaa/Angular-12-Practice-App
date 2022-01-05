@@ -1,1 +1,60 @@
-<p>tutorial40 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Reactive Form Validations </b></h1>
+    </div>
+
+    <li> Use form from the last tutorial </li>
+    <li> import validators </li>
+    <li> Apply validations </li>
+    <li> Define Getter for fields </li>
+    <li> Show errors and disable button </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=44PZFXaUa0U&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=42">Video
+        Link</a></li>
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> Reactive Form Validations </u> </h1> <br>
+
+    <h3> <b> <u> Use form from the last tutorial </u></b> : <br>
+
+      <form [formGroup]="studentForm" (ngSubmit)="registration()">
+        <input type="text" placeholder="Enter Name" formControlName="name"> <br>
+        <span style="color:red" *ngIf="name && name.invalid && name.touched">This input field is not valid</span> <br>
+
+        <input type="email" placeholder="Enter Email" formControlName="email"> <br>
+        <span style="color:red" *ngIf="email && email.invalid && email.touched">Please enter valid email address</span> <br>
+
+        <input type="text" placeholder="Enter Phone Number" formControlName="phoneNumber"> <br>
+        <span style="color:red" *ngIf="phoneNumber && phoneNumber.invalid && phoneNumber.touched">This input field is not valid</span> <br>
+
+        <input type="text" placeholder="Enter Address" formControlName="address"> <br>
+        <span style="color:red" *ngIf="address && address.invalid && address.touched">This input field is not valid</span> <br>
+
+        <input type="text" placeholder="Enter Marks" formControlName="marks"> <br>
+        <span style="color:red" *ngIf="marks && marks.invalid && marks.touched">This input field is not valid</span> <br>
+
+        <button type="submit" mat-raised-button color="primary"[disabled]="studentForm.invalid" >Submit</button>
+
+      </form>
+    </h3>
+    <hr>
+    <h3><b><u> import validators </u></b> : <br>
+      --> if you want to apply validations you must have to import <b>validator </b> in .ts file
+    </h3>
+
+    <h3><b><u> Apply validations </u></b> : <br>
+      <u><b>Syntax</b></u>: FormControl('',[Validators.required]),
+    </h3>
+
+    <h3><b><u>Define Getter for fields</u></b>: <br>
+      For to Display the error messages we want to get the valid property from the input box. <br>
+      so we have to write get method inside the .ts file .
+    </h3>
+  </div>
+</jqxSplitter>

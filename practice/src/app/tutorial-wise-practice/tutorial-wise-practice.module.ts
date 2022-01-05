@@ -13,7 +13,7 @@ import { Tutorial17Component } from './tutorial17/tutorial17.component';
 import { Tutorial18Component } from './tutorial18/tutorial18.component';
 import { Tutorial19Component } from './tutorial19/tutorial19.component';
 import { Tutorial20Component } from './tutorial20/tutorial20.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
@@ -92,7 +92,7 @@ import { Tutorial40Component } from './tutorial40/tutorial40.component';
     AngularMaterialModule,
     FormsModule,RouterModule,
     AngularNgBootstrapModule,
-    HttpClientModule,
+    HttpClientModule,ReactiveFormsModule,
   ],
   bootstrap: [Tutorial24Component],
   exports: [Tutorial24Component,ChildComponent,UserDetailsComponent,USDINRPipe],
