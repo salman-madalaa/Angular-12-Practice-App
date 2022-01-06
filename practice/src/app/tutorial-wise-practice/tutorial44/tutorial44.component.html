@@ -1,0 +1,41 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b>  404 page </b></h1>
+    </div>
+
+    <li> {{'What is 404 page' | titlecase}} </li>
+    <li> {{'Make Component for 404 Page' | titlecase}} </li>
+    <li> {{'Add Routing For 404 page' | titlecase}} </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=m-AR6ly6eSU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=46">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> 404 page </u> </h1> <br>
+
+    <h3><u><b> {{'What is 404 page' | titlecase}} </b></u>: <br>
+     When a visitor hit a n invalid url in a website or in our web application that time we say it this is the 404 error <br>
+    </h3>
+    <hr>
+    <h3><u><b>  {{'Make Component for 404 Page' | titlecase}} </b></u> : <br>
+      --> For to make a 404 page component we have to create the component like page-not-found <b>Syntax: ng g c pageNotFound</b>
+    </h3>
+
+    <h3><u><b> {{'Add Routing For 404 page' | titlecase}}  </b></u> : <br>
+      --> When enter wrong url to redirect 404 page add this component in app-routing.module.ts file , and give the path "**" <br>
+      <b>Syntax:</b> path:'**'',Component:PageNotFoundComponent . (Here ** means universal route that time we call page not found component.) <br>
+      <b><u>Note</u> : </b> This must be put at the end of the all routes.
+    </h3>
+
+
+
+  </div>
+</jqxSplitter>

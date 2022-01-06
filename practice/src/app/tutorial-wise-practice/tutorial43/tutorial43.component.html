@@ -1,0 +1,46 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Dynamic Routing </b></h1>
+    </div>
+
+    <li> What is Dynamic Routing </li>
+    <li> How to pass data in the routing </li>
+    <li> How to get data from routing </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=nLxy0sqxhAc&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=45">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> Dynamic Routing </u> </h1> <br>
+
+    <h3><u><b> What is Dynamic Routing </b></u>: <br>
+      Dynamic routing, also called adaptive routing, is a process where a router can forward data via a different route or given destination based on the current conditions of the communication
+    </h3>
+    <hr>
+    <h3><u><b> How to pass data in the routing </b></u> : <br>
+      --> For to pass data to a routing fir the route have the extension <b> /:id </b> . <br>
+      --> When you pass that id in the router we have to provide the id in the routerLink property .<b> Syntax : routerLink="student/2"</b> <br>
+    </h3>
+
+    <h3><u><b> How to get data from routing </b></u> : <br>
+      --> For to get data from router we import the <b>ActivateRoute</b> module in the .ts file . <br>
+    --> For to get the id from the route <b>route.snapshot.paramsMap.get("id")</b> write this in component.ts file. <br>
+    Note : Here Name should be same in path and the route.snapshot.paramsMap.get("id") . <br>
+    Suppose if we get this page id the code is in tutorial43.component.ts file . in your console or visual studio code .
+    </h3>
+
+    <h3><u><b> Interview Questations </b></u> : <br>
+     1) Is it passiable that with id some name ? (or) is it pass two paramaeters in router path ? <br>
+     A) Yes We can pass two paramaeters in to the router <b>Syntax : </b> in router path  "student/:id/:name"  in html routerLink="student/5/salman" <br>
+    </h3>
+
+  </div>
+</jqxSplitter>

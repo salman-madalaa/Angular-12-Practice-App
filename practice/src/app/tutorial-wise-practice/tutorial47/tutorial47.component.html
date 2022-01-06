@@ -1,0 +1,74 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Make Service </b></h1>
+    </div>
+
+    <li> {{'make service ' | titlecase}} </li>
+    <li> {{'Add data in service' | titlecase}} </li>
+    <li> {{'make another component' | titlecase}} </li>
+    <li> {{'use service in this component' | titlecase}} </li>
+    <li> {{'use Service in another component' | titlecase}} </li>
+    <li> {{'Interview Questations' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=3Gj3Uo5h_XU&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=49">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'make service ' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'make service' | titlecase}} </b></u>: <br>
+      --> For to make service we have to run the command <b>ng g s ServiceName</b> <br>
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'Add data in service' | titlecase}} </b></u> : <br>
+      --> <b style="color:rgb(79, 68, 235)"> Service is more useful for sharing the data to different components .</b>
+      <br>
+      --> After Creating the service make a function to return the data . <br>
+      --> Add data in that service function . <br>
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'use service in this component' | titlecase}} </b></u> : <br>
+      --> For to use the service in the another component we must import that service in that component <br>
+      <b><u>Syntax</u> : </b> inside constructor function "private _ser1:Service1Service " write this.so that it can import
+      that service1 . <br>
+      --> After import service we call the function which was in the service.ts file . <br>
+      <b><u>Syntax</u>:</b> this._ser1.userData(); <br>
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'use Service in another component' | titlecase}} </b></u> : <br>
+      --> Follow the same above process in another component.ts file .So that you can get same data in this component
+      also. <br>
+
+      <b><u>Here is the Example:</u></b> <br>
+
+      <ul style="background-color:teal;color:azure">
+        <li *ngFor="let user of data">
+          {{user.name}}--{{user.phoneNumber}}--{{user.address}}
+        </li>
+      </ul>
+    </h3>
+
+
+    <h3><u><b> {{'Interview Questations' | titlecase}} </b></u> : <br>
+      1) can we have functions in service ? <br>
+      A) Yes,
+      2) can we use service in multiple modules ? <br>
+      A) yes
+      3) is services are component dependent or model dependent ? <br>
+      A) Services are not component dependent or model dependent. they are totally independent .
+      4) Can we call API's in services ? <br>
+      A) Yes , We can call API's.
+    </h3>
+
+  </div>
+</jqxSplitter>

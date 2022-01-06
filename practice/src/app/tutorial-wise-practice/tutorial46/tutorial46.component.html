@@ -1,0 +1,63 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Service </b></h1>
+    </div>
+
+    <li> {{'what is service ?' | titlecase}} </li>
+    <li> {{'why we need it?' | titlecase}} </li>
+    <li> {{'understand the problem statement' | titlecase}} </li>
+    <li> {{'Interview Questations' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=tDQeogR9KuQ&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=48">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> Service </u> </h1> <br>
+
+    <h3><u><b> {{'what is service ?' | titlecase}} </b></u>: <br>
+      Services are the basically classes that may have some data,property,functions . And we can use this data
+      ,property,function in different files .<br>
+      For Exampe if we have two pages home page and user page ,and you wan to share the data between two components that
+      time we can use the service.
+    </h3>
+    <hr>
+    <h3><u><b> {{'why we need service?' | titlecase}} </b></u> : <br>
+      --> give same data on the two pages . <br>
+      --> For example we want to get the user list on home we will call the API on the home page or second thing same
+      API we should call on the user page <br>
+      --> Here we are actually duplicating the code . Because same API call from two pages .<br>
+      --> So that time we create a service and call our API on that service and share the data between the two
+      components.<br>
+      --> We can simply say that the Services are the Helpers . that can share the data between multiple components .
+      <br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'understand the problem statement' | titlecase}} </b></u> : <br>
+
+      <ul>
+        <li *ngFor="let user of userData">
+          {{user.name}} -- {{user.phoneNumber}}--{{user.address}}
+        </li>
+      </ul>
+      --> If we want to display above information in another component we have to copy the userData of .ts file and
+      paste in another .ts file <br>
+      --> And this is not good practice because we are duplicating the code . <br>
+      --> So at this time we need the service .
+    </h3>
+    <hr>
+    <h3><u><b> {{'Interview Questations' | titlecase}} </b></u> : <br>
+      1) can we have functions in service ? <br>
+      A) Yes,
+      2) can we use service in multiple modules ? <br>
+      A) yes
+    </h3>
+
+  </div>
+</jqxSplitter>

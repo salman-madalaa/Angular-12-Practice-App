@@ -32,6 +32,17 @@ import { Tutorial37Component } from './tutorial-wise-practice/tutorial37/tutoria
 import { Tutorial38Component } from './tutorial-wise-practice/tutorial38/tutorial38.component';
 import { Tutorial39Component } from './tutorial-wise-practice/tutorial39/tutorial39.component';
 import { Tutorial40Component } from './tutorial-wise-practice/tutorial40/tutorial40.component';
+import { Tutorial41Component } from './tutorial-wise-practice/tutorial41/tutorial41.component';
+import { Tutorial42Component } from './tutorial-wise-practice/tutorial42/tutorial42.component';
+import { Tutorial43Component } from './tutorial-wise-practice/tutorial43/tutorial43.component';
+import { Tutorial44Component } from './tutorial-wise-practice/tutorial44/tutorial44.component';
+import { Page1Component } from './tutorial-wise-practice/tutorial45/pages/page1/page1.component';
+import { Page2Component } from './tutorial-wise-practice/tutorial45/pages/page2/page2.component';
+import { Page3Component } from './tutorial-wise-practice/tutorial45/pages/page3/page3.component';
+import { Tutorial45Component } from './tutorial-wise-practice/tutorial45/tutorial45.component';
+import { Tutorial46Component } from './tutorial-wise-practice/tutorial46/tutorial46.component';
+import { Tutorial47Component } from './tutorial-wise-practice/tutorial47/tutorial47.component';
+import { Tutorial48Component } from './tutorial-wise-practice/tutorial48/tutorial48.component';
 
 
 const routes: Routes = [
@@ -66,7 +77,22 @@ const routes: Routes = [
   { path: 'tutorial/38', component: Tutorial38Component },
   { path: 'tutorial/39', component: Tutorial39Component },
   { path: 'tutorial/40', component: Tutorial40Component },
+  { path: 'tutorial/41', component: Tutorial41Component },
+  { path: 'tutorial/42', component: Tutorial42Component },
+  { path: 'tutorial/43', component: Tutorial43Component },
+  { path: 'tutorial/44', component: Tutorial44Component },
+  {
+    path: 'tutorial/45', component: Tutorial45Component, children: [
+      { path: 'page1', component: Page1Component },
+      { path: 'page2', component: Page2Component },
+      { path: 'page3', component: Page3Component }
+    ]
+  },
+  { path: 'tutorial/46', component: Tutorial46Component },
+  { path: 'tutorial/47', component: Tutorial47Component },
+  { path: 'tutorial/48', component: Tutorial48Component },
 
+  { path: 'tutorial/:id/:name', component: Tutorial43Component },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

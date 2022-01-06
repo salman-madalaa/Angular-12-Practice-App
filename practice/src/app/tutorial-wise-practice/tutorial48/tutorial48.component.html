@@ -1,0 +1,73 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Call API in Angular </b></h1>
+    </div>
+
+    <li> {{'What is API ' | titlecase}} </li>
+    <li> {{'Understand how API works' | titlecase}} </li>
+    <li> {{'Make Service' | titlecase}} </li>
+    <li> {{'Call get API' | titlecase}} </li>
+    <li> {{'Display data using API' | titlecase}} </li>
+    <li> {{'Interview Questations' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=Ij0KypgKPNs&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=50">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Call API in Angular' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'What is API ' | titlecase}} </b></u>: <br>
+      --> As We know that angular does not directly connected to database. so we need interfaces between them . <br>
+      --> So API's are the interfaces between frontend(client) and backend(Server). <br>
+      --> Full Form of API is <b>Application Programming Interface</b>.
+    </h3>
+    <hr>
+    <h3><u><b> {{'Understand how API works' | titlecase}} </b></u> : <br>
+      <img src="./../../../assets/APIWorks.JPG" width="95%">
+      <br>
+      --> In service we can see the <b style="color:red"> HttpClient Module </b> .This module is responsible for
+      feteching the data from Server . <br>
+      --> This is already made by the angular.We just need some method from this module like get,post,put,delete...etc
+    </h3>
+    <hr>
+    <h3><u><b> {{'Make Service and Call get API' | titlecase}} </b></u> : <br>
+      --> First we have to import HttpClientModule in module.ts file in imports section .<br>
+      --> For to create Service we run this command <b>ng g s serviceName</b> <br>
+      --> Next import the HttpClient in that service. inside the constructor we write like this <b>Syntax :</b>
+      constructor(private http:HttpClient)
+      --> Next you can create a function and return the value from server .<br>
+      Note: Here i use dummy API. <br>
+
+
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'Display data using API' | titlecase}} </b></u> : <br>
+      Example : <br>
+      <div>
+        Today Doller to Rupee Value :{{dataa.results.INR}}
+      </div>
+    </h3>
+    <hr>
+
+
+    <h3><u><b> {{'Interview Questations' | titlecase}} </b></u> : <br>
+      1) can we have functions in service ? <br>
+      A) Yes,
+      2) can we use service in multiple modules ? <br>
+      A) yes
+      3) is services are component dependent or model dependent ? <br>
+      A) Services are not component dependent or model dependent. they are totally independent .
+      4) Can we call API's in services ? <br>
+      A) Yes , We can call API's.
+    </h3>
+
+  </div>
+</jqxSplitter>

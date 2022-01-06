@@ -43,6 +43,18 @@ import { Tutorial37Component } from './tutorial37/tutorial37.component';
 import { Tutorial38Component } from './tutorial38/tutorial38.component';
 import { Tutorial39Component } from './tutorial39/tutorial39.component';
 import { Tutorial40Component } from './tutorial40/tutorial40.component';
+import { Tutorial41Component } from './tutorial41/tutorial41.component';
+import { Tutorial42Component } from './tutorial42/tutorial42.component';
+import { Tutorial43Component } from './tutorial43/tutorial43.component';
+import { Tutorial44Component } from './tutorial44/tutorial44.component';
+import { RedElDirective } from './tutorial41/red-el.directive';
+import { Tutorial45Component } from './tutorial45/tutorial45.component';
+import { Tutorial46Component } from './tutorial46/tutorial46.component';
+import { Tutorial47Component } from './tutorial47/tutorial47.component';
+import { Tutorial48Component } from './tutorial48/tutorial48.component';
+import { Page1Component } from './tutorial45/pages/page1/page1.component';
+import { Page2Component } from './tutorial45/pages/page2/page2.component';
+import { Page3Component } from './tutorial45/pages/page3/page3.component';
 
 
 
@@ -84,6 +96,18 @@ import { Tutorial40Component } from './tutorial40/tutorial40.component';
     Tutorial39Component,
     Tutorial40Component,
     USDINRPipe,
+    Tutorial41Component,
+    Tutorial42Component,
+    Tutorial43Component,
+    Tutorial44Component,
+    RedElDirective,
+    Tutorial45Component,
+    Tutorial46Component,
+    Tutorial47Component,
+    Tutorial48Component,
+    Page1Component,
+    Page2Component,
+    Page3Component,
 
   ],
   imports: [

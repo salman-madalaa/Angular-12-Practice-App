@@ -1,0 +1,87 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Child Routes </b></h1>
+    </div>
+
+    <li> {{'what are child routes ?' | titlecase}} </li>
+    <li> {{'Make some Components' | titlecase}} </li>
+    <li> {{'Make child Route' | titlecase}} </li>
+    <li> {{'Make links for child routes' | titlecase}} </li>
+    <li> {{'Interview Questations' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=sqM4Z8ok-IY&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=47">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> Child Routes </u> </h1> <br>
+
+    <h3><u><b> {{'what are child routes' | titlecase}} </b></u>: <br>
+      As we know routes are basically use for display the pages . bust some time we need some child pages .<br>
+      Example : if we show some pages inside the parent route we nee child routes.
+    </h3>
+    <hr>
+    <h3><u><b> {{'Make some Components' | titlecase}} </b></u> : <br>
+      --> for to create some components for this tutorial . Run the command <b>ng g c componentName</b>. <br>
+      --> Here i make some page1,page2,page3 components . i wll display these components inside this tutorial page.<br>
+      --> So here we need child routes .
+    </h3>
+
+    <h3><u><b> {{'Make child Route' | titlecase}} </b></u> : <br>
+      --> Here We create child routes for this page(tutorial45) . <br>
+      --> For create child routes go to the app-routing.module.ts file and go the parent route. <br>
+      --> <b><u>Syntax</u>: path:'tutorial/45',component:Tutorial45Component,Children: [
+        path:'page1,component:Page1Component ] </b> <br>
+      <u><b>Note</b>:</u> The above must be put in a single flower brackets.
+    </h3>
+
+    <h3><u><b> {{'Make links for child routes' | titlecase}} </b></u> : <br>
+      --> For to display routes in parent we have create links <br>
+      --> Next we have to define router-outlet for disaply pages1,2,3 in this parent page <br>
+
+      <b><u>Example 1</u>:</b> <br>
+
+      <a routerLink="page1"> page 1</a> &nbsp;&nbsp; <a routerLink="page2"> page 2</a> &nbsp; &nbsp;<a
+        routerLink="page3"> page 3</a> <br>
+      <div style="height:50px;background-color:teal;color:azure">
+        <router-outlet></router-outlet>
+      </div>
+    </h3>
+
+    <!-- <br><br>
+    <b><u>Example 2</u>:</b>(using ngb power bootstrap) <br>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink routerLink="page1">One</a>
+        <ng-template ngbNavContent>
+          <router-outlet></router-outlet>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="2">
+        <a ngbNavLink routerLink="page2">Two</a>
+        <ng-template ngbNavContent>
+          <router-outlet></router-outlet>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="3">
+        <a ngbNavLink routerLink="page3">Three</a>
+        <ng-template ngbNavContent>
+          <router-outlet></router-outlet>
+        </ng-template>
+      </li>
+    </ul>
+
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+    <pre>Active: {{ active }}</pre> -->
+
+
+  </div>
+</jqxSplitter>

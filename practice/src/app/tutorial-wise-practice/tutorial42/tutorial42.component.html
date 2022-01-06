@@ -1,0 +1,50 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Basic Routing </b></h1>
+    </div>
+
+    <li> Make New App </li>
+    <li> Make Component </li>
+    <li> Apply Routing </li>
+    <li> Interview Questations </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=kaHSVI4kDTc&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=44">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> Basic Routing </u> </h1> <br>
+
+    <h3><u><b>Make New App</b></u>: <br>
+      --> For to make new App run the command <b>ng n AppName</b> . <br>
+      --> When you run the above command command line asking when routing is add or not ? . So you write yes and click
+      enter. <br>
+      --> So that the command line automatically include the routing to our app . <br>
+      --> In our app folder we can get the one more file app-routing.module.ts in our app folder. <br>
+    </h3>
+    <hr>
+    <h3><u><b> Make Component </b></u> : <br>
+      --> for to make component we must run the command <b> ng g c componentName </b> . <br>
+      --> so for routing we have to create 2 or 3 components . <br>
+      <u>Note:</u> I already created components in this tutorial so i did not create the dummy components .
+    </h3>
+
+    <h3><u><b> Apply Routing </b></u> : <br>
+      --> In routing.module.ts file we have to give path and component name <b> path:'home',component:HomeComponent </b> . <br>
+      --> For to use the routing we have to write " router-outlet " tag inside the html tag . <br>
+      --> Through the router-outlet we can get the allcoponents on that html page .
+    </h3>
+
+    <h3><u><b> Interview Questations </b></u> : <br>
+     1) How we can pass the id to the router? <br>
+     A) For to pass the id to the router we have to give the ' /:id ' in the router path . For to give the id we give like <b> routerLink="student/1" </b>
+    </h3>
+
+  </div>
+</jqxSplitter>
