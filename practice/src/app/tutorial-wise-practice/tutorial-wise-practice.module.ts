@@ -60,7 +60,11 @@ import { Tutorial50Component } from './tutorial50/tutorial50.component';
 import { Tutorial51Component } from './tutorial51/tutorial51.component';
 import { Tutorial52Component } from './tutorial52/tutorial52.component';
 import { AdminModule } from '../admin/admin.module';
-
+import { Tutorial53Component } from './tutorial53/tutorial53.component';
+import { Tutorial54Component } from './tutorial54/tutorial54.component';
+import { Tutorial55Component } from './tutorial55/tutorial55.component';
+import { Tutorial56Component } from './tutorial56/tutorial56.component';
+import { TutorialWisePracticeRoutingModule } from './tutorial-wise-practice-routing.module';
 
 
 @NgModule({
@@ -117,18 +121,32 @@ import { AdminModule } from '../admin/admin.module';
     Tutorial50Component,
     Tutorial51Component,
     Tutorial52Component,
+    Tutorial53Component,
+    Tutorial54Component,
+    Tutorial55Component,
+    Tutorial56Component,
+    
 
   ],
   imports: [
-    CommonModule,BrowserModule,
+    CommonModule,
+    TutorialWisePracticeRoutingModule,
     jqxSplitterModule,
     AngularMaterialModule,
-    FormsModule,RouterModule,
+    FormsModule,
+    RouterModule,
     AngularNgBootstrapModule,
-    HttpClientModule,ReactiveFormsModule,AdminModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    AdminModule,
   ],
   bootstrap: [Tutorial24Component],
-  exports: [Tutorial24Component,ChildComponent,UserDetailsComponent,USDINRPipe],
+  exports: [
+    Tutorial24Component,
+    ChildComponent,
+    UserDetailsComponent,
+    USDINRPipe,
+  ],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class TutorialWisePracticeModule { }
+export class TutorialWisePracticeModule {}

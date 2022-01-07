@@ -3,15 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListComponent } from './list/list.component';
 import { LoginComponent } from './login/login.component';
 
-const adminroutes: Routes = [
-  {path: 'admin', children: [
-    {path: 'login', component: LoginComponent},
-    {path:'list',component: ListComponent}
-  ]}
+const routes: Routes = [
+  {path:'login',component: LoginComponent},
+  {path:'list',component: ListComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(adminroutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class Admin1RoutingModule { }

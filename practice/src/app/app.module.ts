@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AngularNgBootstrapModule } from './angular-ng-bootstrap/angular-ng-bootstrap.module';
 import { USDINRPipe } from './customePipes/usd-inr.pipe';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { USDINRPipe } from './customePipes/usd-inr.pipe';
     AngularMaterialModule,
     FormsModule,
     AngularNgBootstrapModule,
+    UserModule
   ],
   providers: [],
   // schemas: [ CUSTOM_ELEMENTS_SCHEMA],

@@ -1,0 +1,46 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Group Routing in Angular </b></h1>
+    </div>
+
+    <li> {{'make one more module and route for it' | titlecase}} </li>
+    <li> {{'make group routed' | titlecase}} </li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=aeybVeBvN5M&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=55">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Group Routing in Angular' | titlecase}} </u> </h1> <br>
+
+    Example : <br>
+    <h3><u><b> {{'test' | titlecase}} </b></u>: <br>
+      <ul>
+        <a routerLink="/admin/login">Adminlogin</a> &nbsp;&nbsp;
+        <a routerLink="/admin/list">AdminList</a>&nbsp;&nbsp;
+        <a routerLink="/user/login">Userlogin</a> &nbsp;&nbsp;
+        <a routerLink="/user/list">UserList</a>
+      </ul>
+    </h3>
+
+
+    <h3><u><b> {{'make one more module and route for it' | titlecase}} </b></u>: <br>
+      --> Grouping is more importent because we can differentiate the routes based on the grouping . <br>
+      Here we have to creare one more module that is user module include routing module also . <br>
+    --> Create the new components list and users in  and use those components for group routing <br>
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'make group routed' | titlecase}} </b></u>: <br>
+    --> Make the group route like <b> path:"user",chuldren:[ ] </b> <br>
+  --> See the code in user-routing.module.ts file you can understand the code
+  </h3>
+  </div>
+</jqxSplitter>

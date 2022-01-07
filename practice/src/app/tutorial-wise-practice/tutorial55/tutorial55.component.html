@@ -1,0 +1,49 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Lazy Loading component in Angular </b></h1>
+    </div>
+
+    <li> {{'Make two components' | titlecase}} </li>
+    <li> {{'make two buttton for loading components' | titlecase}} </li>
+    <li> {{'write component loading function' | titlecase}} </li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=guQlKSs5Frc&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=57">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Lazy Loading component in Angular' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'Make two components' | titlecase}} </b></u>: <br>
+      --> creating two components <b>ng g c componentName</b> .<br>
+      --> I creates two components product and order <br>
+      --> Go to tutorial55.component.ts file and import ViewContainerRef,ComponentFactoryResolver <br>
+      <b>ViewContainerRef</b> : it is responsible for making a container where we can display the lazy loaded
+      component.<br>
+      <b>ComponentFactoryResolver</b>: make the component from the code.
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'make two buttton for loading components' | titlecase}} </b></u>:</h3>
+    <button mat-raised-button color="primary" (click)="loadProduct()">product</button>
+    <button mat-raised-button color="primary" (click)="loadOrder()">order</button>
+
+    <div>
+      <ng-template #showHere></ng-template>
+  </div>
+
+
+
+
+
+
+  </div>
+</jqxSplitter>

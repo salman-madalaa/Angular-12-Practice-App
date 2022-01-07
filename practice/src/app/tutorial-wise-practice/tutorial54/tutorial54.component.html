@@ -1,0 +1,55 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Lazy Loading in Angular </b></h1>
+    </div>
+
+    <li> {{'make a module' | titlecase}} </li>
+    <li> {{'Make two components' | titlecase}} </li>
+    <li> {{'Use module in lazy loading way' | titlecase}} </li>
+    <li> {{'Make Routing' | titlecase}} </li>
+    <li> {{'Make Routing link ' | titlecase}} </li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=JjIQq9lh-Bw&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=56">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Lazy Loading in Angular' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'why we are need lazy loading' | titlecase}} </b></u>: <br>
+      --> When app component is load all the components is loading at a time . This not good practice because with out
+      using the component we are loading that route. <br>
+      --> So angular introduced lazy loading . Based on this lazy loading we can load the route at thr time of required
+      . so that app module does not load all the components at a same time.
+    </h3>
+    <hr>
+    <h3><u><b> {{'make a module and components' | titlecase}} </b></u>: <br>
+      --> Here i create a two modules admin1,user1 modules by commad line : ng g m admin1 --routing , ng g m user1
+      --routing ,
+      --> And creating two components in each module . <br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'Use module in lazy loading way' | titlecase}} </b></u>: <br>
+      Note : When we use lazy loading we <b>did not import </b> the module in app.module.ts in imports section <br>
+      <u><b>Synatax</b>:</u> path:'admin',loadChildren:()=>(./admin/admin.module).then(module=>module.AdminModule)
+    </h3>
+
+    <h3><u><b> {{'Make Routing And Routing link' | titlecase}} </b></u>: <br>
+      <ul>
+        <a routerLink="/admin1/login">admin1login</a> &nbsp; &nbsp; &nbsp;
+        <a routerLink="/admin1/list">admin1list</a> &nbsp; &nbsp; &nbsp;
+        <a routerLink="/user1/login">user1login</a> &nbsp; &nbsp; &nbsp;
+        <a routerLink="/user1/list">user1list</a> &nbsp; &nbsp; &nbsp;
+      </ul>
+    </h3>
+
+  </div>
+</jqxSplitter>
