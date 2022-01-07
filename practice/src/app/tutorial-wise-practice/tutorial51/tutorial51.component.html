@@ -1,0 +1,49 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Recap Routing and Module in Angular </b></h1>
+    </div>
+
+    <li> {{'make module' | titlecase}} </li>
+    <li> {{'component inside module' | titlecase}} </li>
+    <li> {{'show module component' | titlecase}} </li>
+    <li> {{'Add routing and routing link' | titlecase}} </li>
+    <li> {{'add module and routing' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=o_Plo5VllsA&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=53">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Api Post Method' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'make module' | titlecase}} </b></u>: <br>
+      --> for to make module use the command <b>ng g m moduleName</b> <br>
+    </h3>
+    <h3><u><b> {{'component inside module' | titlecase}} </b></u>: <br>
+      --> After creating a module next run the command for creating component <b>ng g c componentName</b> <br>
+      --> After creating component use exports section inside the module.ts file and export that componets in to app
+      module <br>
+      --> Next import that new creating module in to app.module.ts file in import section. so that we can acces that
+      that module entire of application.<br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'show module component' | titlecase}} </b></u>: <br>
+      --> For show the componet use the componet selector
+    </h3>
+    <hr>
+    <h3><u><b> {{'Add routing and routing link' | titlecase}} </b></u>: <br>
+      --> Go to the app-routing.module.ts and import the two componets inside that file .<br>
+      --> Give the path:'' and component: ComponentName in routes section . So that we can go that component based on
+      out path . <br>
+      -->next use the routerLink property for to define the route <b>Syntax: routerLink="pathName" </b> <br>
+    --> Use <b> router-outlet </b> tag for displaying the components .
+    </h3>
+
+  </div>
+</jqxSplitter>

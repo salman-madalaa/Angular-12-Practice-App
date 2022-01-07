@@ -1,5 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -20,4 +21,9 @@ export class Service1Service {
   getData(){
     return this.http.get("https://api.fastforex.io/fetch-multi?from=USD&to=INR&api_key=demo");
   }
+
+  postData(ob:any):Observable<any>{
+    return ob;
+  }
+
 }

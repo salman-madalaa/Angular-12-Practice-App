@@ -1,0 +1,45 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Api Post Method </b></h1>
+    </div>
+
+    <li> {{'Make Form' | titlecase}} </li>
+    <li> {{'Get Form Data' | titlecase}} </li>
+    <li> {{'Make Function in service and call' | titlecase}} </li>
+    <li> {{'Call post API' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=TFFrbW9_iZE&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=51">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Api Post Method' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'Make Form' | titlecase}} </b></u>: <br>
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+        username: <input type="text" name="username" ngModel> <br> <br>
+        password: <input type="password" name="password" ngModel><br><br>
+        <button mat-raised-button color="primary">submit</button>
+      </form>
+    </h3>
+    <hr>
+    <h3><u><b> {{'Get Form Data' | titlecase}} </b></u> : <br>
+      --> When you click on the submit button we can get the form value on the console. <br>
+      --> So we can get the Form data .
+    </h3>
+    <hr>
+    <h3><u><b> {{'Make Function in service and call' | titlecase}} </b></u> : <br>
+      --> So next we create a function in service.ts file and call that function from component.ts file <br>
+      --> Here i return the same data . if you sent the data to server please give the http request in the service
+      method.So that it can pass the data to server
+      --> <u>Note :</u> Here I doest not make any server so just return the data which we pass to service method .
+    </h3>
+
+  </div>
+</jqxSplitter>

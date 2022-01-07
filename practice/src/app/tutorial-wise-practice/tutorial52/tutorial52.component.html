@@ -1,0 +1,61 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Routing Module in Angular </b></h1>
+    </div>
+
+    <li> {{'what is routing module' | titlecase}} </li>
+    <li> {{'make module with routing file' | titlecase}} </li>
+    <li> {{'Define Routing inside module' | titlecase}} </li>
+    <li> {{'make routing link' | titlecase}} </li>
+    <li> {{'test' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=jyKpMN3qogc&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=54">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Routing Module in Angular' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'what is routing module' | titlecase}} </b></u>: <br>
+      --> When we define the routing inside the module then we called a routing module .<br>
+      When we have a small application we can take whole routing inside app-routing.module.ts file <br>
+      This is not possible for big application so we have to create routingmodule individually.And that is the best
+      practice. <br>
+    </h3>
+    <h3><u><b> {{'make module with routing file' | titlecase}} </b></u>: <br>
+      --> For to create Routing <b><u>Syntax</u>: ng g m moduleName --routing </b> <br>
+      <b><u>Note </u>:</b> After creating routermodule make sure that new rouring module should be import in root
+      routing module (app-routing.module.ts) file in imports section<br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'Define Routing inside module' | titlecase}} </b></u>: <br>
+      --> Next Import the new module inside the app.module.ts of imports section . <br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'make routing link routing link' | titlecase}} </b></u>: <br>
+      --> Go to the app-routing.module.ts and import the componets inside that file .<br>
+      --> Give the path:'' and component: ComponentName in routes section . So that we can go that component based on
+      out path . <br>
+      -->next use the routerLink property for to define the route <b>Syntax: routerLink="pathName" </b> <br>
+      --> Use <b> router-outlet </b> tag for displaying the components .
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'test' | titlecase}} </b></u>: <br>
+      <ul>
+        <a routerLink="/user">users</a> &nbsp;&nbsp;
+        <a routerLink="/list">List</a>
+      </ul>
+    </h3>
+    <router-outlet></router-outlet>
+
+
+
+  </div>
+</jqxSplitter>

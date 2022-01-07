@@ -1,0 +1,51 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Model And Interface </b></h1>
+    </div>
+
+    <li> {{'How to make it' | titlecase}} </li>
+    <li> {{'how to use it' | titlecase}} </li>
+    <li> {{'with model with other file' | titlecase}} </li>
+    <li> {{'use model with component file' | titlecase}} </li>
+    <li> {{'use model with service file' | titlecase}} </li>
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=sGYEZvGu5ak&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=52">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Api Post Method' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'How to make it' | titlecase}} </b></u>: <br>
+      --> Model is nothing but dataStructure of your data. And it provide the validation to your data also . <br>
+      --> if we miss any field in our data structure it will give an error some field is missing . So that we can send
+      our data securly . so that we can not get any error from server some field is missing like that . <br>
+      --> If we enter number insted of string it will give an error automatillay . so that we can give the correct data
+      . <br>
+      --> In this tutorial i make on folder name is models. Inside that folder I create student.ts file in that file i
+      creat a interface (like model) of out student dataStructure . <br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'how to use it' | titlecase}} </b></u> : <br>
+      --> Syntax : studetForm:Student  . Here Student is a model . so studentForm must be in this model formate .
+    </h3>
+    <hr>
+    <h3><u><b> {{'with model with other file' | titlecase}} </b></u> : <br>
+      --> we should import this model file in any other component or service file. <br>
+    --> <u>Synatx :</u> import Student from './model/Student' like this .
+    </h3>
+    <hr>
+    <h3><u><b> {{'use model with component file and Service' | titlecase}} </b></u> : <br>
+      <u>Synatx :</u> import Student from './model/Student' like this .
+    --> Next  " student:Student " like this we can use in component and Service also
+      </h3>
+
+
+  </div>
+</jqxSplitter>

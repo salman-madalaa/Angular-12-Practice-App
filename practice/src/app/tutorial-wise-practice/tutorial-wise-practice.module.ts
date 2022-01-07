@@ -55,6 +55,11 @@ import { Tutorial48Component } from './tutorial48/tutorial48.component';
 import { Page1Component } from './tutorial45/pages/page1/page1.component';
 import { Page2Component } from './tutorial45/pages/page2/page2.component';
 import { Page3Component } from './tutorial45/pages/page3/page3.component';
+import { Tutorial49Component } from './tutorial49/tutorial49.component';
+import { Tutorial50Component } from './tutorial50/tutorial50.component';
+import { Tutorial51Component } from './tutorial51/tutorial51.component';
+import { Tutorial52Component } from './tutorial52/tutorial52.component';
+import { AdminModule } from '../admin/admin.module';
 
 
 
@@ -108,6 +113,10 @@ import { Page3Component } from './tutorial45/pages/page3/page3.component';
     Page1Component,
     Page2Component,
     Page3Component,
+    Tutorial49Component,
+    Tutorial50Component,
+    Tutorial51Component,
+    Tutorial52Component,
 
   ],
   imports: [
@@ -116,7 +125,7 @@ import { Page3Component } from './tutorial45/pages/page3/page3.component';
     AngularMaterialModule,
     FormsModule,RouterModule,
     AngularNgBootstrapModule,
-    HttpClientModule,ReactiveFormsModule,
+    HttpClientModule,ReactiveFormsModule,AdminModule
   ],
   bootstrap: [Tutorial24Component],
   exports: [Tutorial24Component,ChildComponent,UserDetailsComponent,USDINRPipe],

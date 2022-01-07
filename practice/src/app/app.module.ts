@@ -24,7 +24,7 @@ import { USDINRPipe } from './customePipes/usd-inr.pipe';
     CommonModules,
     AngularMaterialModule,
     FormsModule,
-    AngularNgBootstrapModule
+    AngularNgBootstrapModule,
   ],
   providers: [],
   // schemas: [ CUSTOM_ELEMENTS_SCHEMA],

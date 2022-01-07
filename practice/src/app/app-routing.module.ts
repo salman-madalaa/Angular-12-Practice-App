@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminRoutingModule } from './admin/admin-routing.module';
 import { HomeComponent } from './tutorial-wise-practice/home/home.component';
 import { PageNotFoundComponent } from './tutorial-wise-practice/page-not-found/page-not-found.component';
 import { Tutorial11Component } from './tutorial-wise-practice/tutorial11/tutorial11.component';
@@ -43,6 +44,10 @@ import { Tutorial45Component } from './tutorial-wise-practice/tutorial45/tutoria
 import { Tutorial46Component } from './tutorial-wise-practice/tutorial46/tutorial46.component';
 import { Tutorial47Component } from './tutorial-wise-practice/tutorial47/tutorial47.component';
 import { Tutorial48Component } from './tutorial-wise-practice/tutorial48/tutorial48.component';
+import { Tutorial49Component } from './tutorial-wise-practice/tutorial49/tutorial49.component';
+import { Tutorial50Component } from './tutorial-wise-practice/tutorial50/tutorial50.component';
+import { Tutorial51Component } from './tutorial-wise-practice/tutorial51/tutorial51.component';
+import { Tutorial52Component } from './tutorial-wise-practice/tutorial52/tutorial52.component';
 
 
 const routes: Routes = [
@@ -91,14 +96,18 @@ const routes: Routes = [
   { path: 'tutorial/46', component: Tutorial46Component },
   { path: 'tutorial/47', component: Tutorial47Component },
   { path: 'tutorial/48', component: Tutorial48Component },
+  { path: 'tutorial/49', component: Tutorial49Component },
+  { path: 'tutorial/50', component: Tutorial50Component },
+  { path: 'tutorial/51', component: Tutorial51Component },
+  { path: 'tutorial/52', component: Tutorial52Component },
 
-  { path: 'tutorial/:id/:name', component: Tutorial43Component },
+  // { path: 'tutorial/:id/:name', component: Tutorial43Component },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes),AdminRoutingModule],
+  exports: [RouterModule,AdminRoutingModule]
 })
 export class AppRoutingModule { }
