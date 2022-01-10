@@ -1,1 +1,86 @@
-<p>tutorial56 works!</p>
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Angular Testing Automation </b></h1>
+    </div>
+
+    <li> {{'What is Automation Testing ?' | titlecase}} </li>
+    <li> {{'How does it work ?' | titlecase}} </li>
+    <li> {{'Types of Automation testing' | titlecase}} </li>
+    <li> {{'importent points of automation testing' | titlecase }} </li>
+    <li>{{'automation testing angular' | titlecase}} </li>
+    <li>{{'check config files and structure in angular' | titlecase}} </li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=ApXEw186rN0&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=58">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Angular Testing Automation' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'What is Automation Testing ?' | titlecase}} </b></u>: <br>
+      --> we write some more code in our projectto test our code ,basically our code will test our application that this
+      is working fine or not .
+    </h3>
+    <br>
+
+    <h3><u><b> {{'How does it work ? and why we need it ?' | titlecase}} </b></u>: <br>
+      --> Manual testing takes too much time . because the person check every thing in Manually one by one .<br>
+      --> This automation test is very very fast.<br>
+      --> Make Test Cases of all important functions . <br>
+      --> After we will run these test cases with simple command through command line. <br>
+      --> In very quick time , we will able to run all important features of the project .
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'Types of Automation testing' | titlecase}} </b></u>: <br>
+      --> There are 3 Types of Automation Testing .
+      1) Unit Testing <br>
+      2) Integration Testing <br>
+      3) end to end Testing <br>
+
+      <b><u>Unit Testing</u>:</b> Test the every smallest property or functon of our project . <br>
+      <b><u>Integration Testing</u>:</b> The unit test and its dependency . Lets say we have a functionand this function
+      have some dependency on the data base or some APIs kind of things . <br>
+      <b><u>end to end Testing</u>:</b> This is Testing our complete application from end to end. <br>
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'importent points of automation testing' | titlecase }} </b></u>: <br>
+      --> Test cases are very helpful when we have a large application . because if a tester wants to test all our
+      application it will take lot of time . <br>
+      --> When we want release our product we want to quickly checked out our product is working or not everything
+      working fine or not . <br>
+      --> When we just start making application we should use manual testing. Because requirements are changing every
+      time . <br>
+
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'automation testing angular' | titlecase }} </b></u>: <br>
+      --> In angular automation test there are 3 things . <br>
+      1) Protractor -- Run Test Case on Browser . <br>
+      2) Jasmine -- Testing environment ,Run Spec file for the test case .<br>
+      3) karma -- Run test case in Multiple browser . <br>
+    </h3>
+    <hr>
+
+
+    <h3><u><b> {{'check config files and structure in angular' | titlecase }} </b></u>: <br>
+    --> If we see the karma.conf.js  it is use for run the test cases in multiple browsers . Here we can see the crome browser,firefox browser...etc<br>
+  --> here we can give the port number,browser in this file <br>
+--> if we see the protractor.conf.js file we can see the  jaspin-spec-reporter and node options ,how much interval we want to use and some config files tell the folder ,browser name ...etc
+
+  </h3>
+
+
+
+  </div>
+</jqxSplitter>
