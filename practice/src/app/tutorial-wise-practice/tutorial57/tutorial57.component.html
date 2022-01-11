@@ -1,0 +1,59 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> First Unit Test case </b></h1>
+    </div>
+
+    <li> {{'Default test case' | titlecase}} </li>
+    <li> {{'make new test file ' | titlecase}} </li>
+    <li> {{'write new test case' | titlecase}} </li>
+    <li> {{'understand new test case function' | titlecase }} </li>
+    <li>{{'run test case' | titlecase}} </li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=yhpY9PrPoeQ&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=59">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'First Unit Test case ' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'Default test case' | titlecase}} </b></u>: <br>
+      --> For to run test case we have to type the command <b>ng test</b> <br>
+      --> Then you get the google chrome window of karma browser and you can see the default test cases. <br>
+    </h3>
+    <br>
+
+    <h3><u><b> {{'make new test file ' | titlecase}} </b></u>: <br>
+      -->In angular we can create the our own spec file but the Extension should be <b>spec.ts</b>.
+      --> Inside that file First we have to describe function this is a test suite for all the test cases .<br>
+      --> we have to write the test cases inside the <b>it</b> function .<br>
+      --> Inside the <b>it</b> function we have to pass the name of the test case and we give the expect condition. Ex:
+      expect(100).toBe(100)<br>
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'write new test case' | titlecase}} </b></u>: <br>
+      --> Inside the dummy.spec.t file we write the new test case using the describe , it functions . <br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'understand new test case function' | titlecase}} </b></u>: <br>
+      --> in test cases we write the test conditions based on the toBe,toBeTruthy....etc <br>
+      --> For reference visit the link <a href="https://angular.io/guide/testing">click here</a>
+    --> For to get the jasmin website click the link <a href="https://jasmine.github.io/">jasmin</a>
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'run test case' | titlecase }} </b></u>: <br>
+      --> For to run the test cases we run the command : <b>ng test</b>.
+    </h3>
+    <hr>
+
+  </div>
+</jqxSplitter>

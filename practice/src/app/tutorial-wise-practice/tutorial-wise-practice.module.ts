@@ -65,6 +65,11 @@ import { Tutorial54Component } from './tutorial54/tutorial54.component';
 import { Tutorial55Component } from './tutorial55/tutorial55.component';
 import { Tutorial56Component } from './tutorial56/tutorial56.component';
 import { TutorialWisePracticeRoutingModule } from './tutorial-wise-practice-routing.module';
+import { Tutorial57Component } from './tutorial57/tutorial57.component';
+import { Tutorial58Component } from './tutorial58/tutorial58.component';
+import { Tutorial59Component } from './tutorial59/tutorial59.component';
+import { Tutorial60Component } from './tutorial60/tutorial60.component';
+
 
 
 @NgModule({
@@ -125,7 +130,11 @@ import { TutorialWisePracticeRoutingModule } from './tutorial-wise-practice-rout
     Tutorial54Component,
     Tutorial55Component,
     Tutorial56Component,
-    
+    Tutorial57Component,
+    Tutorial58Component,
+    Tutorial59Component,
+    Tutorial60Component,
+
 
   ],
   imports: [

@@ -1,0 +1,42 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Component Unit Testing </b></h1>
+    </div>
+
+    <li> {{'understand spec file ' | titlecase}} </li>
+    <li> {{'Test html element' | titlecase}} </li>
+    <li> {{'Test a function inside ts file' | titlecase }} </li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=KLlJKJBjeUQ&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=60">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center" class="heading"> <u> {{'Component Unit Testing' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'understand spec file' | titlecase}} </b></u>: <br>
+      --> ComponentFixture : it is basically work with the TestBed . it will help us to actually debugging the test case as well as run time changes . <br>
+    --> DetectChanges : it is use to detect changes change in runtime . <br>
+
+    </h3>
+    <br>
+
+    <h3><u><b> {{'Test html element' | titlecase}} </b></u>: <br>
+      --> First we have to get the html element using we get the nativeElement from that component . <br>
+    --> <b>Syntax</b>: expect(elementRef.querySelector(".header").textContent).toBe("Component Unit Testing");
+    </h3>
+    <hr>
+
+    <h3>
+    <b>Note :</b> I have writing test cases in tutorial58.component.spec.ts . please check it once then you get an idea how to write test cases .
+  </h3>
+  </div>
+</jqxSplitter>

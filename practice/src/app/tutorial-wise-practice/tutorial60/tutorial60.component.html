@@ -1,0 +1,84 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Angular 12 Features </b></h1>
+    </div>
+
+    <li> {{'Moving closer to Ivy Everywhere(View Engine)' | titlecase}} </li>
+    <li> {{'Transitioning from Legacy i18n Message IDs.' | titlecase}} </li>
+    <li> {{'The Future of protractor .' | titlecase}} </li>
+    <li> {{'Nullish Coalescing .' | titlecase }} </li>
+    <li> {{'Learning Angular .' | titlecase}} </li>
+    <li> {{'Stylish improvements.' | titlecase}} </li>
+    <li> {{'Deprecating support for IE11 .' | titlecase}} </li>
+    <li> {{'some more minor changes' | titlecase}}</li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=JOov7bMUxc8&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=62">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'In Angular 12 only very few updates are happend' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'Moving closer to Ivy Everywhere(View Engine)' | titlecase}} </b></u>: <br>
+      <span style="margin-left: 15px;display: inline-block">
+        --> Now that View Engine is deprecated, it will be removed in a future major release. <br>
+        --> <span style="color:red"> View Engine is responsible for compiling the components . </span> <br>
+        --> But now View Engine is replaced with Ivy Everywhere . <br>
+      </span>
+    </h3>
+    <br>
+
+    <h3><u><b> {{'Transitioning from Legacy i18n Message IDs.' | titlecase}} </b></u>: <br>
+      --> Currently, there are multiple legacy message id formats being used in our i18n system. <br>
+      --> These legacy message ids are fragile as problems can arise based on whitespace . <br>
+      --> The new canonical message id format is much more reliable and bug free. <br>
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'The Future of protractor .' | titlecase}} </b></u>: <br>
+      --> Protractor is an end-to-end testing framework for Angular . <br>
+      --> We’re currently reviewing the feedback for the Protractor and decide that they will continue with protractor
+      or without protractor . <br>
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'Nullish Coalescing .' | titlecase}} </b></u>: <br>
+      <span style="margin-left: 15px;display: inline-block;">
+        --> The nullish coalescing operator (??) has been helping developers write cleaner code in TypeScript classes
+        for a while now.
+        <img src="../../../assets/Nullish Coalescing.JPG" width="95%" height="50%">
+      </span>
+    </h3>
+    <hr>
+
+    <h3><u><b>{{'Learning Angular' | titlecase}}</b></u><br>
+      --> Angular has made some changes to the documentation for better learning of angular . <br>
+      --> They added content projection guide, with more new content in the works.<br>
+    </h3>
+
+    <h3><u><b> {{'Stylish improvements.' | titlecase }} </b></u>: <br>
+      --> Angular components will now support inline Sass in the styles . <br>
+      --> Previously,Sass was only available in external resources due to the Angular compiler.<br>
+      -->Angular 12 is also supporting <b>tailwindcss.</b>
+    </h3>
+    <hr>
+
+    <h3><u><b>{{'Other Updates' | titlecase}}</b></u><br>
+      --> Deprecating Support for IE11 <br>
+      --> Strict mode is enabled by default in the CLI. <br>
+      --> In the V11 update, we added experimental support for Webpack 5 . <br>
+      --> In the V12 they are providing fully support for Webpack 5. <br>
+      --> Update typeScript Version 4.2 in angular 12 . <br>
+      --> <b> ng build </b> command now default to production which saves teams some extra steps . <br>
+    </h3>
+
+  </div>
+</jqxSplitter>

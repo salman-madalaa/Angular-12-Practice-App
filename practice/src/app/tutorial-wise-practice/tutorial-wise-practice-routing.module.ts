@@ -50,6 +50,10 @@ import { Tutorial53Component } from './tutorial53/tutorial53.component';
 import { Tutorial54Component } from './tutorial54/tutorial54.component';
 import { Tutorial55Component } from './tutorial55/tutorial55.component';
 import { Tutorial56Component } from './tutorial56/tutorial56.component';
+import { Tutorial57Component } from './tutorial57/tutorial57.component';
+import { Tutorial58Component } from './tutorial58/tutorial58.component';
+import { Tutorial59Component } from './tutorial59/tutorial59.component';
+import { Tutorial60Component } from './tutorial60/tutorial60.component';
 
 
 const tutorialRoutes: Routes = [
@@ -106,6 +110,10 @@ const tutorialRoutes: Routes = [
     { path: '54', component: Tutorial54Component },
     { path: '55', component: Tutorial55Component },
     { path: '56', component: Tutorial56Component },
+    { path: '57', component: Tutorial57Component },
+    { path: '58', component: Tutorial58Component },
+    { path: '59', component: Tutorial59Component },
+    { path: '60', component: Tutorial60Component },
   ]}
 
 
