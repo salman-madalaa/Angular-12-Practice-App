@@ -1,0 +1,91 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Angular 13 Features </b></h1>
+    </div>
+
+    <li> {{'TypeScript 4.4 Support Module' | titlecase}} </li>
+    <li> {{'View Engine is no longer available' | titlecase}} </li>
+    <li> {{'Node js older than 12.0 is no longer supported' | titlecase}} </li>
+    <li> {{'Improvements to the Angular CLI' | titlecase }} </li>
+    <li> {{'Rxjs version updated' | titlecase}} </li>
+    <li> {{'Validation Improvement' | titlecase}} </li>
+    <li> {{'IE 11 support being removed' | titlecase}} </li>
+    <li> {{'some more changes..' | titlecase}}</li>
+
+    <br>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=4d3iBVOQajs&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=63">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+    <h1 style="text-align:center"> <u> {{'Angular 13 Features' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'TypeScript 4.4 Support Module' | titlecase}} </b></u>: <br>
+      <span style="margin-left: 15px;display: inline-block">
+        --> TypeScript 4.4 support has been added;as of October 5, <br>
+        --> Versions older than TypeScript 4.4.2 are no longer supported in the core <br>
+      </span>
+    </h3>
+    <br>
+
+    <h3><u><b> {{'View engine Removed' | titlecase}} </b></u>: <br>
+      --> In angular 13 View engine is completely removed <br>
+      --> It is replaced with angular Ivy engine <br>
+      --> Angular next-generation compilation and rendering pipline . <br>
+      --> So some of the extra code from angular is removed and angular has become littlebit light weight . <br>
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'Node js Support.' | titlecase}} </b></u>: <br>
+      --> Node.js versions older than v12.20 are no longer supported . <br>
+      --> The current Node js version 16.13.0 <br>
+      --> You may face issues to install packages with older versions . <br>
+
+    </h3>
+    <hr>
+    <h3><u><b> {{'Angular CLI improvements' | titlecase}} </b></u>: <br>
+      <span style="margin-left: 15px;display: inline-block;">
+        --> Angular now supports the use of persistent build cache . <br>
+        --> We can tur on and off build cache by angular.json file . <br>
+        --> With cache option speed of build is increase up to 68% <br>
+      </span>
+    </h3>
+    <hr>
+
+    <h3><u><b>{{'Rxjs version updated' | titlecase}}</b></u><br>
+      --> RxJS 7.4 is now the default for apps created with ng new . <br>
+      --> Existing apps using RxJS v6.x will have to manually update using the <b> npm install rsjs@7.4</b>
+    </h3>
+
+    <h3><u><b> {{'Validation Improvements' | titlecase }} </b></u>: <br>
+      --> Now we can enable and disable validations like min, max,email etc .
+    </h3>
+    <hr>
+
+    <h3><u><b>{{'IE 11 Support' | titlecase}}</b></u><br>
+      --> From now angular dont support IE 11 <br>
+      --> So some polyfil files also removed for IE 11 and angular become more faster <br>
+    </h3>
+    <hr>
+    <h3><u><b>{{'Some other changes' | titlecase}}</b></u><br>
+      --> Improvements to TestBed enable a better job of tearing down test modules . <br>
+      --> $localize is a stable API, for internationalization <br>
+      --> Vaalidation Error messaging has been improved . <br>
+    </h3>
+
+    <h3><u><b>Install Angular 13</b></u>
+    --> npm update angular-cli-g <br>
+    or <br>
+    npm uninstall -g @angular/cli <br>
+    npm install -g angular/cli@latest
+    </h3>
+
+  </div>
+</jqxSplitter>

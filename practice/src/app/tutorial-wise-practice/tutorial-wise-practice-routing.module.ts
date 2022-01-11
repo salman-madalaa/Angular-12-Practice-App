@@ -54,6 +54,7 @@ import { Tutorial57Component } from './tutorial57/tutorial57.component';
 import { Tutorial58Component } from './tutorial58/tutorial58.component';
 import { Tutorial59Component } from './tutorial59/tutorial59.component';
 import { Tutorial60Component } from './tutorial60/tutorial60.component';
+import { Tutorial61Component } from './tutorial61/tutorial61.component';
 
 
 const tutorialRoutes: Routes = [
@@ -114,6 +115,7 @@ const tutorialRoutes: Routes = [
     { path: '58', component: Tutorial58Component },
     { path: '59', component: Tutorial59Component },
     { path: '60', component: Tutorial60Component },
+    { path: '61', component: Tutorial61Component },
   ]}
 
 

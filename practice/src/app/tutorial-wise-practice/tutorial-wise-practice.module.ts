@@ -69,6 +69,7 @@ import { Tutorial57Component } from './tutorial57/tutorial57.component';
 import { Tutorial58Component } from './tutorial58/tutorial58.component';
 import { Tutorial59Component } from './tutorial59/tutorial59.component';
 import { Tutorial60Component } from './tutorial60/tutorial60.component';
+import { Tutorial61Component } from './tutorial61/tutorial61.component';
 
 
 
@@ -134,6 +135,7 @@ import { Tutorial60Component } from './tutorial60/tutorial60.component';
     Tutorial58Component,
     Tutorial59Component,
     Tutorial60Component,
+    Tutorial61Component,
 
 
   ],
