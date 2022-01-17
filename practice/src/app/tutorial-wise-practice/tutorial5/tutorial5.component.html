@@ -1,0 +1,73 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> {{'Interpolation' | titlecase}} </b></h1>
+    </div>
+
+    <li>{{'what is interrpolation ?' | titlecase}}</li>
+    <li>{{'How to use it ?' | titlecase}}</li>
+    <li>{{'What we can do with the Interpolation ?' | titlecase}}</li>
+    <li>{{'what we can not do with the Interpolation' | titlecase}}</li>
+    <li>{{'Interview Questations' | titlecase}}</li>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=G6ZX7ivQhzI&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=5">Video
+        Link</a></li>
+
+  </div>
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'Interpolation' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'what is interrpolation ?' | titlecase}} </b></u>: <br>
+      <span style="margin-left: 15px;display: inline-block">
+        --> Interpolation is basically use display the dynamic data in our html page .<br>
+        --> Dynamic data is nothing but define data inside the component.ts file and display that data in the html file
+        using interpolation. <br>
+        --> interpolation Syntax is <b>doubleflowerbrackets</b>
+      </span>
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'How to use it ?' | titlecase}} </b></u>: <br>
+      --> Here I take an example in component.ts file declared temp = cassiniPLM and display that temp on the screen .
+      <br>
+      Result : {{temp}} .
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'What we can do with the Interpolation ?' | titlecase}} </b></u>: <br>
+      --> Here I take an example in component.ts file declared temp = cassiniPLM and display that temp on the screen .
+      <br>
+      Result : {{temp}} . <br>
+      --> Even we can get the data of a function also . <br>
+      Ex: {{add()}} ; {{getValue()}} <br>
+
+      {{ 2+2+2*20}} <br>
+      {{num == 100}}
+
+      Note : So we can achieve get the function values , true or false, addition, multiplication .... etc
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'what we can not do with the Interpolation' | titlecase}} </b></u>: <br>
+      --> we can not to the assign values inside the interpolation like num = 200 . <br>
+      --> we can not use typeof inside the interpolation . <br>
+      --> We can not use new keyword . <br>
+      --> you can not add incremental values like ++,--
+    </h3>
+    <hr>
+
+    <h3><u><b> {{'Interview Questations' | titlecase}} </b></u>: <br>
+   1) shall we use interpolation inside the tag and to assign to class ? <br>
+   A) yes, we can use the interpolation to a class ex: class="{{temp}}"
+  </h3>
+  <hr>
+
+
+  </div>
+
+</jqxSplitter>

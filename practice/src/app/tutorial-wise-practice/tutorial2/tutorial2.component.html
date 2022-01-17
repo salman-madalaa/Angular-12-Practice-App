@@ -1,0 +1,52 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> Set up and Installation </b></h1>
+    </div>
+
+    <li>{{'How to install Node and NPM' | titlecase}}</li>
+    <li>{{'How to install angular CLI' | titlecase}}</li>
+    <li>{{'Install First Agular app' | titlecase}} vs Angular.js</li>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=OTNylafKCJE&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=2">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'Set up and Installation' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'How to install Node and NPM' | titlecase}} </b></u>: <br>
+      --> First we have to go to node js website and install node js <a href="https://nodejs.org/en/download/">download
+        link</a> <br>
+      --> After download execute the exe file then you can easily install the node js in our system <br>
+      --> After finish just type the command <b>node -v</b> so that you can get the version of the node js . <br>
+    </h3>
+    <hr>
+
+
+    <h3><u><b> {{'How to install angular CLI' | titlecase}} </b></u>: <br>
+      --> if we want ti install the angular cli use the command <b>npm install -g @angular/cli</b> . here -g meand
+      globally installed . <br>
+      --> when you run the above command you can get the angular cli download automatically into our system . <br>
+      --> for to check the angular cli version <b>ng version</b>.
+    </h3>
+    <hr>
+
+
+    <h3><u><b> {{'Install First Agular app' | titlecase}} </b></u>: <br>
+      --> For to create a app type the command <b>ng new projectName (or) ng n projectName</b> <br>
+      --> If you run the above command it will ask some questations give yes/no type then you give that options. <br>
+      --> After create the project go to the project folder and run the command <b>ng serve</b>. <br>
+      --> After run the above command you can get the app is running on port number 4200 <br>
+    --> Go to browser and type http://localhost:4200 then you can get the out put of the project . <br>
+    </h3>
+
+
+  </div>
+</jqxSplitter>

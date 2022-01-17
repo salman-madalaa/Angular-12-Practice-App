@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { User1Module } from '../user1/user1.module';
+import { Tutorial1Component } from './tutorial1/tutorial1.component';
+import { Tutorial7Component } from './tutorial7/tutorial7.component';
+import { Tutorial8Component } from './tutorial8/tutorial8.component';
+import { Tutorial9Component } from './tutorial9/tutorial9.component';
+import { Tutorial10Component } from './tutorial10/tutorial10.component';
 import { Tutorial11Component } from './tutorial11/tutorial11.component';
 import { Tutorial12Component } from './tutorial12/tutorial12.component';
 import { Tutorial13Component } from './tutorial13/tutorial13.component';
@@ -10,6 +15,7 @@ import { Tutorial16Component } from './tutorial16/tutorial16.component';
 import { Tutorial17Component } from './tutorial17/tutorial17.component';
 import { Tutorial18Component } from './tutorial18/tutorial18.component';
 import { Tutorial19Component } from './tutorial19/tutorial19.component';
+import { Tutorial2Component } from './tutorial2/tutorial2.component';
 import { Tutorial20Component } from './tutorial20/tutorial20.component';
 import { Tutorial21Component } from './tutorial21/tutorial21.component';
 import { Tutorial22Component } from './tutorial22/tutorial22.component';
@@ -20,6 +26,7 @@ import { Tutorial26Component } from './tutorial26/tutorial26.component';
 import { Tutorial27Component } from './tutorial27/tutorial27.component';
 import { Tutorial28Component } from './tutorial28/tutorial28.component';
 import { Tutorial29Component } from './tutorial29/tutorial29.component';
+import { Tutorial3Component } from './tutorial3/tutorial3.component';
 import { Tutorial30Component } from './tutorial30/tutorial30.component';
 import { Tutorial31Component } from './tutorial31/tutorial31.component';
 import { Tutorial32Component } from './tutorial32/tutorial32.component';
@@ -30,6 +37,7 @@ import { Tutorial36Component } from './tutorial36/tutorial36.component';
 import { Tutorial37Component } from './tutorial37/tutorial37.component';
 import { Tutorial38Component } from './tutorial38/tutorial38.component';
 import { Tutorial39Component } from './tutorial39/tutorial39.component';
+import { Tutorial4Component } from './tutorial4/tutorial4.component';
 import { Tutorial40Component } from './tutorial40/tutorial40.component';
 import { Tutorial41Component } from './tutorial41/tutorial41.component';
 import { Tutorial42Component } from './tutorial42/tutorial42.component';
@@ -43,6 +51,7 @@ import { Tutorial46Component } from './tutorial46/tutorial46.component';
 import { Tutorial47Component } from './tutorial47/tutorial47.component';
 import { Tutorial48Component } from './tutorial48/tutorial48.component';
 import { Tutorial49Component } from './tutorial49/tutorial49.component';
+import { Tutorial5Component } from './tutorial5/tutorial5.component';
 import { Tutorial50Component } from './tutorial50/tutorial50.component';
 import { Tutorial51Component } from './tutorial51/tutorial51.component';
 import { Tutorial52Component } from './tutorial52/tutorial52.component';
@@ -53,12 +62,24 @@ import { Tutorial56Component } from './tutorial56/tutorial56.component';
 import { Tutorial57Component } from './tutorial57/tutorial57.component';
 import { Tutorial58Component } from './tutorial58/tutorial58.component';
 import { Tutorial59Component } from './tutorial59/tutorial59.component';
+import { Tutorial6Component } from './tutorial6/tutorial6.component';
 import { Tutorial60Component } from './tutorial60/tutorial60.component';
 import { Tutorial61Component } from './tutorial61/tutorial61.component';
 
 
+
 const tutorialRoutes: Routes = [
   { path:'',children:[
+    { path: '1', component: Tutorial1Component },
+    { path: '2', component: Tutorial2Component },
+    { path: '3', component: Tutorial3Component },
+    { path: '4', component: Tutorial4Component },
+    { path: '5', component: Tutorial5Component },
+    { path: '6', component: Tutorial6Component },
+    { path: '7', component: Tutorial7Component },
+    { path: '8', component: Tutorial8Component },
+    { path: '9', component: Tutorial9Component },
+    { path: '10', component: Tutorial10Component },
     { path: '11', component: Tutorial11Component },
     { path: '12', component: Tutorial12Component },
     { path: '13', component: Tutorial13Component },

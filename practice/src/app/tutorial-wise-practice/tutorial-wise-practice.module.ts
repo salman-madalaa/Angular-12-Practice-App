@@ -70,6 +70,19 @@ import { Tutorial58Component } from './tutorial58/tutorial58.component';
 import { Tutorial59Component } from './tutorial59/tutorial59.component';
 import { Tutorial60Component } from './tutorial60/tutorial60.component';
 import { Tutorial61Component } from './tutorial61/tutorial61.component';
+import { Tutorial1Component } from './tutorial1/tutorial1.component';
+import { Tutorial2Component } from './tutorial2/tutorial2.component';
+import { Tutorial3Component } from './tutorial3/tutorial3.component';
+import { Tutorial4Component } from './tutorial4/tutorial4.component';
+import { Tutorial5Component } from './tutorial5/tutorial5.component';
+import { Tutorial6Component } from './tutorial6/tutorial6.component';
+import { Tutorial7Component } from './tutorial7/tutorial7.component';
+import { Tutorial8Component } from './tutorial8/tutorial8.component';
+import { Tutorial9Component } from './tutorial9/tutorial9.component';
+import { Tutorial10Component } from './tutorial10/tutorial10.component';
+import { InlineStyleExampleComponent } from './tutorial8/inline-style-example/inline-style-example.component';
+import { InlineTemplateExampleComponent } from './tutorial8/inline-template-example/inline-template-example.component';
+import { BothinlineStyleTemplateComponent } from './tutorial8/bothinline-style-template/bothinline-style-template.component';
 
 
 
@@ -136,6 +149,19 @@ import { Tutorial61Component } from './tutorial61/tutorial61.component';
     Tutorial59Component,
     Tutorial60Component,
     Tutorial61Component,
+    Tutorial1Component,
+    Tutorial2Component,
+    Tutorial3Component,
+    Tutorial4Component,
+    Tutorial5Component,
+    Tutorial6Component,
+    Tutorial7Component,
+    Tutorial8Component,
+    Tutorial9Component,
+    Tutorial10Component,
+    InlineStyleExampleComponent,
+    InlineTemplateExampleComponent,
+    BothinlineStyleTemplateComponent,
 
 
   ],
@@ -156,7 +182,9 @@ import { Tutorial61Component } from './tutorial61/tutorial61.component';
     Tutorial24Component,
     ChildComponent,
     UserDetailsComponent,
-    USDINRPipe,
+    USDINRPipe,InlineStyleExampleComponent,
+    InlineTemplateExampleComponent,
+    BothinlineStyleTemplateComponent
   ],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

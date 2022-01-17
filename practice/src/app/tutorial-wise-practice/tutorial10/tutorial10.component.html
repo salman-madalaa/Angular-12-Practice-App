@@ -1,0 +1,48 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> {{'Make and call function' | titlecase}} </b></h1>
+    </div>
+
+    <li>{{'Define function' | titlecase}}</li>
+    <li>{{'call function on button click' | titlecase}}</li>
+    <li>{{'params in function ' | titlecase}}</li>
+    <li>{{'interview questation' | titlecase}}</li>
+
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=yuiZliV4pWk&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=10">Video
+        Link</a></li>
+
+  </div>
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'Make and call function' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'Define function ?' | titlecase}} </b></u>: <br>
+      --> function will be define inside .ts file <br>
+      --> In this tutorial i make a function with name " add() " inside the tutorial10.component.ts file . <br>
+      --> Here i call the function using interpolation feature <br> output : {{add()}}
+    </h3>
+    <hr>
+    <h3><u><b> {{'call function on button click' | titlecase}} </b></u>: <br>
+      --> Here i call add() function using button click <br>
+      --> When you click the button output will be displayedon the screen <br>
+      <button mat-raised-button (click)="clickme()" color="primary"> click me</button>
+      <h3> output: {{data}} </h3>
+    </h3>
+    <hr>
+    <h3><u><b> {{'params in function' | titlecase}} </b></u>: <br>
+      --> Now i create button and when i click that button passing the parameters and display that parameter in alert
+      window.<br>
+      <button mat-raised-button (click)="alert('cassini')" color="primary"> click me for Name </button> <br> <br>
+      <button mat-raised-button (click)="alert(100)" color="primary"> click me for Number </button>
+
+    </h3>
+    <hr>
+
+  </div>
+
+</jqxSplitter>

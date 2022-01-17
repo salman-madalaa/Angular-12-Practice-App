@@ -1,0 +1,48 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> {{'Module' | titlecase}} </b></h1>
+    </div>
+
+    <li>{{'What is Module ?' | titlecase}}</li>
+    <li>{{'How we can make a module' | titlecase}}</li>
+    <li>{{'how to use module' | titlecase}}</li>
+    <li>{{'make component inside module' | titlecase}}</li>
+
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=mXtEhgRpRa4&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=9">Video
+        Link</a></li>
+
+  </div>
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'Module' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'What is Module ?' | titlecase}} </b></u>: <br>
+      --> Module is a compleate feature of your application . <br>
+      --> For example we have to implement authentication so that we can create login,logout,reset,...ete components .
+      <br>
+      --> All these components we can achieve authentication feature .
+    </h3>
+    <hr>
+    <h3><u><b> {{'How we can make a module' | titlecase}} </b></u>: <br>
+      --> For Create a module we run the command <b>ng generate module moduleName (or) ng g m moduleName</b>
+      <br>
+      --> For example create a authentication module we can run the command <b>ng g m authentication</b> <br>
+      --> Then you can get the authentication folder inside that we have one file " authentication.module.ts " .<br>
+      <span style="color:red"><u>Note : </u> After create module import that module inside app.module.ts file import
+        section ,then it will work .</span>
+    </h3>
+    <hr>
+    <h3><u><b> {{'how to use module' | titlecase}} </b></u>: <br>
+      --> In this tutorial i create a TutorialWisePracticeModule in that module i create all tutorials concepts . <br>
+      --> After create that module i import that module inside the root module(app.module.ts) in imports section. <br>
+    </h3>
+    <hr>
+
+  </div>
+
+</jqxSplitter>

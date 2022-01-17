@@ -1,0 +1,60 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> {{'Component' | titlecase}} </b></h1>
+    </div>
+
+    <li>{{'What is Component ?' | titlecase}}</li>
+    <li>{{'How we can make a component' | titlecase}}</li>
+    <li>{{'how to use Component' | titlecase}}</li>
+    <li>{{'interview questation' | titlecase}}</li>
+
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=MIO4sLhyh1Q&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=7">Video
+        Link</a></li>
+
+  </div>
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'Component' | titlecase}} </u> </h1> <br>
+
+    <h3><u><b> {{'What is Component ?' | titlecase}} </b></u>: <br>
+      --> Components are the building blocks of our application . That are used to develop any specific feature or
+      functionality . <br>
+      --> For example if we want to make a header in our website that time we can create a component and write your
+      header code inside that commponent .<br>
+      --> when ever we make a component we can easily reuse it at any time . <br>
+      --> we can create component at one time and reuse it many times. <br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'How we can make a component' | titlecase}} </b></u>: <br>
+      --> For Create a component we run the command <b>ng generate component componentName (or) ng g c ComponentName</b>
+      <br>
+      --> For example create a login component we can run the command <b>ng g c login</b> <br>
+      --> Then you can get the login folder inside that folder we have four files " css, html, spec.ts, ts " files .<br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'how to use Component' | titlecase}} </b></u>: <br>
+      --> if we want to use one component in another component we have use the <b> component Selector</b> <br>
+      --> Component selector is present in the .ts file <br>
+      --> use that selector inside any other component you can see the out of that selector .<br>
+      --> for example login copmonent we cann see the "app-login" is the selector which is present in the
+      login.component.ts file .<br>
+    </h3>
+    <hr>
+    <h3><u><b> {{'interview questation' | titlecase}} </b></u>: <br>
+      1) Can we change our component name ? <br>
+      A) Yes we can changes our component name <br>
+      2) Can we chane html,css files ? <br>
+      A) Yes, after change the file name use that name inside the component.ts file <br>
+      3) What should be the length of any component and How many lines of code inside a component ? <br>
+      A) There is <b>no paramater </b> to tell that how many lines of code inside a components. But try to make your component as small as possible .
+    </h3>
+    <hr>
+
+  </div>
+
+</jqxSplitter>

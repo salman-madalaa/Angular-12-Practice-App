@@ -1,0 +1,85 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> {{'Component with inline style & inline template' |
+          titlecase}} </b></h1>
+    </div>
+
+    <li>{{'inline style ' | titlecase}}</li>
+    <li>{{'inline template ' | titlecase}}</li>
+
+
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=Rzf9DS6_Ezc&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=8">Video
+        Link</a></li>
+
+  </div>
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'Component with inline style & inline template' | titlecase}} </u> </h1> <br>
+
+    <h3>
+      <b><u>Inline Style </u>:</b> <br>
+      --> when we create a component command line defaultly created four files css, html, spec.ts, ts files . <br>
+      --> If we use inline style at that time command line create 3 files ". css " file is not create. <br>
+      --> css will be writen inside our " .ts " file . <br>
+      --> for to create inline style command is : <b> ng g c componentName --inline-style</b> <br> <br>
+
+      Example : <br>
+      --> Here i run the command <b> ng g c inlineStyleExample --inline-style</b> <br>
+      --> so command line create a folder with name inline-style-example <br>
+      --> Inside that folder we can see the 3 files . <br>
+      --> Next go to the inline-style-example.component.ts file then you can see the css is present . <br>
+      <u>Note :</u> when we write the css inside the .ts file code must be between this " ` " symbol . <br>
+      Output : <app-inline-style-example></app-inline-style-example>
+    </h3>
+    <hr>
+
+    <h3>
+      <b><u>Inline Template </u>:</b> <br>
+      --> If we use inline Template at that time command line create 3 files ". html " file is not create. <br>
+      --> html will be writen inside our " .ts " file . <br>
+      --> for to create inline Template command is : <b> ng g c componentName --inline-template</b> <br>
+
+      Example : <br>
+      --> Here i run the command <b> ng g c inlineTemplateExample --inline-template</b> <br>
+      --> so command line create a folder with name inline-template-example <br>
+      --> Inside that folder we can see the 3 files . <br>
+      --> Next go to the inline-template--example.component.ts file then you can see the html is present . <br>
+      <u>Note :</u> when we write the html code inside the .ts file code must be between this " ` " symbol . <br>
+      Output : <app-inline-template-example></app-inline-template-example>
+    </h3>
+    <hr>
+
+    <h3>
+      <b><u>When we use Inline Style </u>:</b> <br>
+      --> Suppose if we have very small css like 5 to 10 lines at that time we don't need to create seperate css file .
+      so at that time we create a inline Style component.<br>
+    </h3>
+    <hr>
+    <h3>
+      <b><u>When we use Inline Template </u>:</b> <br>
+      --> Suppose if we have very small code like 5 to 10 lines at that time we don't need to create seperate html file
+      . so at that time we create a inline template component.<br>
+    </h3>
+    <hr>
+
+    <h3>
+      <b><u>When we use Inline Style and inline Template </u>:</b> <br>
+      --> when we both inline style and inline template we at that time commandline create two files spec.ts and .ts
+      files <br>
+      --> Now i create a both inline Style and template by using the command : <b> ng g c bothinlineStyleTemplate
+        --inline-style --inline-template</b> <br>
+      --> So now we can get the two files . like .ts file and .spec.ts file <br>
+      --> next we use that selector in any component we can get the out output <br>
+      --> Here i use that selector <br>
+      output: <app-bothinline-style-template></app-bothinline-style-template>
+    </h3>
+    <hr>
+
+  </div>
+
+</jqxSplitter>

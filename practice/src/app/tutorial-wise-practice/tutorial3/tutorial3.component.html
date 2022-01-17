@@ -1,0 +1,60 @@
+<jqxSplitter #mainSplitter width="99.8%" height="99.5%" [panels]="[{ size: 300 }]">
+
+  <!-- ----------------------- This is Left Side panel----------------- -->
+  <div class="splitter-panel">
+    <div class="title">
+      <h1 style="font-size:30px;color:rgb(60, 64, 65)"><b> {{'files and folder structure' | titlecase}} </b></h1>
+    </div>
+
+    <li>{{'understan the file and folder structure' | titlecase}}</li>
+    <li>{{'understand code flow' | titlecase}}</li>
+    <li>{{'interview Questations' | titlecase}}</li>
+    <br>
+    <li><a href="https://www.youtube.com/watch?v=kkddIQ97j08&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v&index=3">Video
+        Link</a></li>
+
+  </div>
+
+  <!-- ----------------------- This is Right Side panel----------------- -->
+  <div class="splitter-panel">
+
+    <h1 style="text-align:center"> <u> {{'files and folder structure' | titlecase}} </u> </h1> <br>
+
+
+    <h3><u><b> {{'understan the file and folder structure' | titlecase}} </b></u>: <br>
+    a) <u style="color:red"> Important file and folders for beginers in angular are : <br></u>
+      <span style="margin-left: 15px;display: inline-block">
+        --> package.json : This is most importent file in project. Inside this folder all packages which we download are present and their versions .<br>
+        --> node_modules : In this folder we have all libraries which is required to out project . <br>
+        --> src folder  :  In this Src folder we will write our code . It is having the root html file .<br>
+        -->app  : This is basically a root component . In this component we have four files like css,html,spec.ts,and .ts files <br>
+        -->assets : In this folder we are maintain the images .<br>
+        --> environments  : it is used to make environment for building, testing ,development environment, production .... for thet we will create a files in environment folder .<br>
+        -->index.html  : This is the root of the all project and execution is start from index.html file . This is basically a bridge between html and angular<br>
+        --> style.css  : This is the global css file if we write  styles in this file these styles are apply to all over the application .<br>
+      </span>
+
+    b)<u style="color:red">Important file and folders for advance   in angular are  : <br></u>
+    <span style="margin-left: 15px;display: inline-block">
+      --> package-lock.json : in package.json we can see the version of the dependencies , but in this file we can see the deatils of every dependency in a detail manner .<br>
+      -->angular.json : This is used for making the configuration of your file . It is mainly use for application configuration for folders and files  <br>
+      --> tsconfig.json  :  This is the default configulation for TypeScript in your project . like you want to use strict mode or not .... etc<br>
+      -->karma.conf.js  : This is used for configuration of testing file  <br>
+      -->polyfills.ts : This file first of all load the all libraries which we provided here after that your main file will be loaded to the browser . <br>
+    </span>
+
+    </h3>
+    <hr>
+
+
+    <h3><u><b> {{'interview Questations' | titlecase}} </b></u>: <br>
+      1) If you delete the package.json file is your project run ? <br>
+      A) No , The project is not run. <br>
+      2) what is difference between package.json and package.lock.json ? <br>
+      A) In package.json we see the only versions of dependencies but in package.lock.json we see the complete information the dependencies <br>
+      3) is there any impact delete package.lock.json ? <br>
+      A) No ,There will be not impact , when you run the npm install this file automatically generated .
+    </h3>
+
+  </div>
+</jqxSplitter>
